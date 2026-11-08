@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this material, please cite the report below."
+title: "Omytea research"
+type: software
+authors:
+  - family-names: Chen
+    given-names: Jiaxuan
+    orcid: "https://orcid.org/0009-0008-5211-4313"
+    affiliation: Omytea
+repository-code: "https://github.com/Omytea-Almighty/omytea-research"
+url: "https://omyteaai.com/research/"
+preferred-citation:
+  type: report
+  title: "Open-system versus unitary density-matrix predictors on long-horizon predictive error: a pre-registered comparison against an exact Bayes reference"
+  authors:
+    - family-names: Chen
+      given-names: Jiaxuan
+      orcid: "https://orcid.org/0009-0008-5211-4313"
+      affiliation: Omytea
+  doi: "10.5281/zenodo.24050453"
+  license: CC-BY-4.0
+  url: "https://doi.org/10.5281/zenodo.24050453"
+  year: 2026
+  date-published: "2026-11-07"
+  publisher:
+    name: Zenodo
+  status: preprint
+  notes: "Preprint, not peer reviewed."

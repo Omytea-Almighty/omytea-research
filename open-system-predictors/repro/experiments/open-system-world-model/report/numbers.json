@@ -1,0 +1,2590 @@
+{
+ "sources_sha256": {
+  "runs/confirm/RESULTS.json": "7d2d607a28b1943162ce2662e7276db37437913203c823a14235a00de89a6211",
+  "runs/e1/SUMMARY.json": "70c8917f117406635706ea8d72e3cbd601799ce7513d6b8f618c5ee2d9b64428",
+  "runs/e2/SUMMARY.json": "0233254273c6f1b0122fcaf0cbd50cdfffdda85d5dc9774d12b5380eda6c7be4",
+  "runs/robustness/ROBUSTNESS.json": "fdf09abd24873033a806a16a464ecd42ed95e63f556ce48b075308e0f263a8c7",
+  "runs/robustness/PARAM_AUDIT.json": "5a465efcbfbfc8d8d2d8be25708da9873c61f66d1d837b2dc010e8bf7a93c255",
+  "runs/robustness/EXACT_CI.json": "13f52704e89ed00f76b589c434cc3d443ee82c342a18f32ef09594e39259279f",
+  "runs/robustness/IDENT_AUDIT.json": "4929b615cbce3cc610d23ef5c6fd323245320072501a7c766ffee723d075663b",
+  "runs/robustness/E3_COVERAGE.json": "034e4f80fd5dd57a40bf5bf4dc5ea8d07039ed4867e286432ee331c85b82d4e2",
+  "runs/robustness/POST_REVIEW_CHECKS.json": "4f19fa490aa9cff279b580e25e8c3f082bab5d9964395db96fc1eaf8dd185cfc",
+  "runs/robustness/ROLLOUT_DIAGNOSTICS.json": "e0493756020aa0b69440da594417b1a63f000f1e6250f9c8aa765860cb8d4ac0",
+  "runs/e3/SUMMARY.json": "fd036593cc7f056f3f79e588329c05dab9db3c466f2f64b72cdd188849833d3d",
+  "runs/e3/GATES-DEV.json": "15bfb9227b57f1fdd21bc83bdb2461d058f7e9f6a146b905dbc8fd8818a5423f",
+  "E3-DESIGN.zh.md": "69a5ad9cfe16a1dc7b016012e2c21fa19ff13b25baaf78263023a7c86bc94e11",
+  "docs/timestamps/2026-10-24-e3-design/E3-CODE-MANIFEST.json": "118501c04f25062fcc31cfc94f78e514c13550ec6beeafdb08339caf40a35aee"
+ },
+ "numbers": {
+  "h1s_mean": {
+   "value": 0.02371098787507698,
+   "display": "0.0237",
+   "source": "runs/confirm/RESULTS.json#H1_simple.mean"
+  },
+  "h1s_blo": {
+   "value": 0.02167492242119121,
+   "display": "0.0217",
+   "source": "runs/confirm/RESULTS.json#H1_simple.boot_ci[0]"
+  },
+  "h1s_bhi": {
+   "value": 0.026010306492520768,
+   "display": "0.0260",
+   "source": "runs/confirm/RESULTS.json#H1_simple.boot_ci[1]"
+  },
+  "h1s_tlo": {
+   "value": 0.021058448576027306,
+   "display": "0.0211",
+   "source": "runs/confirm/RESULTS.json#H1_simple.t_ci[0]"
+  },
+  "h1s_thi": {
+   "value": 0.026363527174126652,
+   "display": "0.0264",
+   "source": "runs/confirm/RESULTS.json#H1_simple.t_ci[1]"
+  },
+  "h1s_holm": {
+   "value": 1.6478561957427486e-08,
+   "display": "1.6e-08",
+   "source": "runs/confirm/RESULTS.json#holm.H1_simple"
+  },
+  "h1m_mean": {
+   "value": 0.018885723784388984,
+   "display": "0.0189",
+   "source": "runs/confirm/RESULTS.json#H1_metastable.mean"
+  },
+  "h1m_blo": {
+   "value": 0.01633341860675951,
+   "display": "0.0163",
+   "source": "runs/confirm/RESULTS.json#H1_metastable.boot_ci[0]"
+  },
+  "h1m_bhi": {
+   "value": 0.02116909662415014,
+   "display": "0.0212",
+   "source": "runs/confirm/RESULTS.json#H1_metastable.boot_ci[1]"
+  },
+  "h1m_tlo": {
+   "value": 0.015879585082064985,
+   "display": "0.0159",
+   "source": "runs/confirm/RESULTS.json#H1_metastable.t_ci[0]"
+  },
+  "h1m_thi": {
+   "value": 0.021891862486712984,
+   "display": "0.0219",
+   "source": "runs/confirm/RESULTS.json#H1_metastable.t_ci[1]"
+  },
+  "h1m_holm": {
+   "value": 2.701821080061096e-07,
+   "display": "2.7e-07",
+   "source": "runs/confirm/RESULTS.json#holm.H1_metastable"
+  },
+  "h2_kl_d1": {
+   "value": 0.03219372074915357,
+   "display": "0.0322",
+   "source": "runs/confirm/RESULTS.json#H2.extrap_kl_by_dE.1"
+  },
+  "h2_kl_d2": {
+   "value": 0.024055404309355717,
+   "display": "0.0241",
+   "source": "runs/confirm/RESULTS.json#H2.extrap_kl_by_dE.2"
+  },
+  "h2_kl_d4": {
+   "value": 0.01993113031918679,
+   "display": "0.0199",
+   "source": "runs/confirm/RESULTS.json#H2.extrap_kl_by_dE.4"
+  },
+  "h2_kl_d8": {
+   "value": 0.02391485233810454,
+   "display": "0.0239",
+   "source": "runs/confirm/RESULTS.json#H2.extrap_kl_by_dE.8"
+  },
+  "h2_rho_float": {
+   "value": -0.7999999999999999,
+   "display": "-0.7999999999999999",
+   "source": "runs/confirm/RESULTS.json#H2.spearman"
+  },
+  "h2_d2_minus_d8": {
+   "value": 0.00014055197125117588,
+   "display": "0.00014",
+   "source": "runs/confirm/RESULTS.json#H2.extrap_kl_by_dE[2]-[8]"
+  },
+  "h2_rev_mean": {
+   "value": 4.260074829950929,
+   "display": "4.26",
+   "source": "runs/confirm/RESULTS.json#H2.revival_U2_minus_L.mean"
+  },
+  "h2_rev_lo": {
+   "value": 3.9521599510992322,
+   "display": "3.95",
+   "source": "runs/confirm/RESULTS.json#H2.revival_U2_minus_L.boot_ci[0]"
+  },
+  "h2_rev_hi": {
+   "value": 4.592659025210031,
+   "display": "4.59",
+   "source": "runs/confirm/RESULTS.json#H2.revival_U2_minus_L.boot_ci[1]"
+  },
+  "h2_holm": {
+   "value": 4.162602467827847e-09,
+   "display": "4.2e-09",
+   "source": "runs/confirm/RESULTS.json#holm.H2"
+  },
+  "h3m_mean": {
+   "value": -0.002185788654488611,
+   "display": "-0.0022",
+   "source": "runs/confirm/RESULTS.json#H3.metastable_C_minus_L1.mean"
+  },
+  "h3m_lo": {
+   "value": -0.003320359775662849,
+   "display": "-0.0033",
+   "source": "runs/confirm/RESULTS.json#H3.metastable_C_minus_L1.boot_ci[0]"
+  },
+  "h3m_hi": {
+   "value": -0.0010760271530038936,
+   "display": "-0.0011",
+   "source": "runs/confirm/RESULTS.json#H3.metastable_C_minus_L1.boot_ci[1]"
+  },
+  "h3s_mean": {
+   "value": -0.00016721702859371355,
+   "display": "-0.00017",
+   "source": "runs/confirm/RESULTS.json#H3.simple_C_minus_L1.mean"
+  },
+  "h3s_tost": {
+   "value": 6.740030798672637e-16,
+   "display": "7e-16",
+   "source": "runs/confirm/RESULTS.json#H3.simple_C_minus_L1.p_tost"
+  },
+  "h3n_mean": {
+   "value": -0.002536393279747411,
+   "display": "-0.0025",
+   "source": "runs/confirm/RESULTS.json#H3_native_L.metastable_C_minus_L.mean"
+  },
+  "h4_simple_mean": {
+   "value": 0.00010523518114558637,
+   "display": "+0.00011",
+   "source": "runs/confirm/RESULTS.json#H4.simple.mean"
+  },
+  "h4_simple_lo": {
+   "value": -1.844143427528938e-05,
+   "display": "-0.00002",
+   "source": "runs/confirm/RESULTS.json#H4.simple.boot_ci[0]"
+  },
+  "h4_simple_hi": {
+   "value": 0.00022725135421308308,
+   "display": "+0.00023",
+   "source": "runs/confirm/RESULTS.json#H4.simple.boot_ci[1]"
+  },
+  "h4_simple_best": {
+   "value": "GRU",
+   "display": "GRU",
+   "source": "runs/confirm/RESULTS.json#H4.simple.best_classical"
+  },
+  "h4_metastable_mean": {
+   "value": 0.0014508417304408211,
+   "display": "+0.00145",
+   "source": "runs/confirm/RESULTS.json#H4.metastable.mean"
+  },
+  "h4_metastable_lo": {
+   "value": 0.00023562267853298344,
+   "display": "+0.00024",
+   "source": "runs/confirm/RESULTS.json#H4.metastable.boot_ci[0]"
+  },
+  "h4_metastable_hi": {
+   "value": 0.0034272701899337172,
+   "display": "+0.00343",
+   "source": "runs/confirm/RESULTS.json#H4.metastable.boot_ci[1]"
+  },
+  "h4_metastable_best": {
+   "value": "GRU",
+   "display": "GRU",
+   "source": "runs/confirm/RESULTS.json#H4.metastable.best_classical"
+  },
+  "h4_action_mean": {
+   "value": -0.00012342132659907084,
+   "display": "-0.00012",
+   "source": "runs/confirm/RESULTS.json#H4.action.mean"
+  },
+  "h4_action_lo": {
+   "value": -0.0010127867318142016,
+   "display": "-0.00101",
+   "source": "runs/confirm/RESULTS.json#H4.action.boot_ci[0]"
+  },
+  "h4_action_hi": {
+   "value": 0.0007366262446768026,
+   "display": "+0.00074",
+   "source": "runs/confirm/RESULTS.json#H4.action.boot_ci[1]"
+  },
+  "h4_action_best": {
+   "value": "GRU",
+   "display": "GRU",
+   "source": "runs/confirm/RESULTS.json#H4.action.best_classical"
+  },
+  "e1_K_delta": {
+   "value": -0.030983805656433105,
+   "display": "-0.0310",
+   "source": "runs/e1/SUMMARY.json#K.delta_vs_L"
+  },
+  "e1_K_lo": {
+   "value": -0.07580112218856812,
+   "display": "-0.0758",
+   "source": "runs/robustness/EXACT_CI.json#e1.K.ci_exact[0]"
+  },
+  "e1_K_hi": {
+   "value": -8.849302927652988e-05,
+   "display": "-0.0001",
+   "source": "runs/robustness/EXACT_CI.json#e1.K.ci_exact[1]"
+  },
+  "e1_n_resamples": {
+   "value": 3125,
+   "display": "3,125",
+   "source": "runs/robustness/EXACT_CI.json#e1.K.n_resamples"
+  },
+  "e1_HMM_params": {
+   "value": 127,
+   "display": "127",
+   "source": "runs/e1/SUMMARY.json#HMM.params"
+  },
+  "e1_L_params": {
+   "value": 1664,
+   "display": "1,664",
+   "source": "runs/e1/SUMMARY.json#L.params"
+  },
+  "e1_HMM_nll": {
+   "value": 1.157061233585804,
+   "display": "1.157",
+   "source": "runs/e1/SUMMARY.json#HMM.extrap_nll"
+  },
+  "e1_L_nll": {
+   "value": 1.1801889737447102,
+   "display": "1.180",
+   "source": "runs/e1/SUMMARY.json#L.extrap_nll"
+  },
+  "e1_spread": {
+   "value": 0.030983805656433105,
+   "display": "0.031",
+   "source": "runs/e1/SUMMARY.json#max-min extrap_nll over K,HMM,GRU,C,U2,L"
+  },
+  "e1_dropped_eth": {
+   "value": 87,
+   "display": "87",
+   "source": "osw.tasks_ethucy.windows('eth')[2]"
+  },
+  "e1_kept_eth": {
+   "value": 2256,
+   "display": "2,256",
+   "source": "len(osw.tasks_ethucy.windows('eth')[0])"
+  },
+  "e1_dropped_hotel": {
+   "value": 339,
+   "display": "339",
+   "source": "osw.tasks_ethucy.windows('hotel')[2]"
+  },
+  "e1_kept_hotel": {
+   "value": 736,
+   "display": "736",
+   "source": "len(osw.tasks_ethucy.windows('hotel')[0])"
+  },
+  "e1_dropped_univ": {
+   "value": 3003,
+   "display": "3,003",
+   "source": "osw.tasks_ethucy.windows('univ')[2]"
+  },
+  "e1_kept_univ": {
+   "value": 10657,
+   "display": "10,657",
+   "source": "len(osw.tasks_ethucy.windows('univ')[0])"
+  },
+  "e1_dropped_zara01": {
+   "value": 79,
+   "display": "79",
+   "source": "osw.tasks_ethucy.windows('zara01')[2]"
+  },
+  "e1_kept_zara01": {
+   "value": 2015,
+   "display": "2,015",
+   "source": "len(osw.tasks_ethucy.windows('zara01')[0])"
+  },
+  "e1_dropped_zara02": {
+   "value": 2668,
+   "display": "2,668",
+   "source": "osw.tasks_ethucy.windows('zara02')[2]"
+  },
+  "e1_kept_zara02": {
+   "value": 2886,
+   "display": "2,886",
+   "source": "len(osw.tasks_ethucy.windows('zara02')[0])"
+  },
+  "e2_A1_flex_64": {
+   "value": 0.06958360697878574,
+   "display": "+0.070",
+   "source": "runs/e2/SUMMARY.json#A1.HQ_vs_flexible_classical@64.delta"
+  },
+  "e2_A1_flex_64_lo": {
+   "value": 0.021941336814890522,
+   "display": "+0.022",
+   "source": "runs/robustness/EXACT_CI.json#e2.A1.HQ_vs_flexible_classical@64.ci_exact[0]"
+  },
+  "e2_A1_flex_64_hi": {
+   "value": 0.14087290916265216,
+   "display": "+0.141",
+   "source": "runs/robustness/EXACT_CI.json#e2.A1.HQ_vs_flexible_classical@64.ci_exact[1]"
+  },
+  "e2_A1_hmm_64": {
+   "value": 0.07013315342579951,
+   "display": "+0.070",
+   "source": "runs/e2/SUMMARY.json#A1.HQ_vs_HMM@64.delta"
+  },
+  "e2_A1_hmm_64_lo": {
+   "value": 0.04414290649839059,
+   "display": "+0.044",
+   "source": "runs/robustness/EXACT_CI.json#e2.A1.HQ_vs_HMM@64.ci_exact[0]"
+  },
+  "e2_A1_hmm_64_hi": {
+   "value": 0.09578594100177473,
+   "display": "+0.096",
+   "source": "runs/robustness/EXACT_CI.json#e2.A1.HQ_vs_HMM@64.ci_exact[1]"
+  },
+  "e2_A1_flex_256": {
+   "value": 0.008706874218762484,
+   "display": "+0.009",
+   "source": "runs/e2/SUMMARY.json#A1.HQ_vs_flexible_classical@256.delta"
+  },
+  "e2_A1_flex_256_lo": {
+   "value": -0.003609504908200667,
+   "display": "-0.004",
+   "source": "runs/robustness/EXACT_CI.json#e2.A1.HQ_vs_flexible_classical@256.ci_exact[0]"
+  },
+  "e2_A1_flex_256_hi": {
+   "value": 0.019890536466718123,
+   "display": "+0.020",
+   "source": "runs/robustness/EXACT_CI.json#e2.A1.HQ_vs_flexible_classical@256.ci_exact[1]"
+  },
+  "e2_A1_hmm_256": {
+   "value": -0.008507619924082777,
+   "display": "-0.009",
+   "source": "runs/e2/SUMMARY.json#A1.HQ_vs_HMM@256.delta"
+  },
+  "e2_A1_hmm_256_lo": {
+   "value": -0.016568717958052925,
+   "display": "-0.017",
+   "source": "runs/robustness/EXACT_CI.json#e2.A1.HQ_vs_HMM@256.ci_exact[0]"
+  },
+  "e2_A1_hmm_256_hi": {
+   "value": 0.0012696889665040124,
+   "display": "+0.001",
+   "source": "runs/robustness/EXACT_CI.json#e2.A1.HQ_vs_HMM@256.ci_exact[1]"
+  },
+  "e2_A2_flex_64": {
+   "value": -0.37799492187526934,
+   "display": "-0.378",
+   "source": "runs/e2/SUMMARY.json#A2.HQ_vs_flexible_classical@64.delta"
+  },
+  "e2_A2_flex_64_lo": {
+   "value": -0.4442304502430906,
+   "display": "-0.444",
+   "source": "runs/robustness/EXACT_CI.json#e2.A2.HQ_vs_flexible_classical@64.ci_exact[0]"
+  },
+  "e2_A2_flex_64_hi": {
+   "value": -0.3098318170021982,
+   "display": "-0.310",
+   "source": "runs/robustness/EXACT_CI.json#e2.A2.HQ_vs_flexible_classical@64.ci_exact[1]"
+  },
+  "e2_A2_hmm_64": {
+   "value": 0.07275419799112343,
+   "display": "+0.073",
+   "source": "runs/e2/SUMMARY.json#A2.HQ_vs_HMM@64.delta"
+  },
+  "e2_A2_hmm_64_lo": {
+   "value": 0.012468433218491393,
+   "display": "+0.012",
+   "source": "runs/robustness/EXACT_CI.json#e2.A2.HQ_vs_HMM@64.ci_exact[0]"
+  },
+  "e2_A2_hmm_64_hi": {
+   "value": 0.13303996276375546,
+   "display": "+0.133",
+   "source": "runs/robustness/EXACT_CI.json#e2.A2.HQ_vs_HMM@64.ci_exact[1]"
+  },
+  "e2_A2_flex_256": {
+   "value": -0.3034789497345568,
+   "display": "-0.303",
+   "source": "runs/e2/SUMMARY.json#A2.HQ_vs_flexible_classical@256.delta"
+  },
+  "e2_A2_flex_256_lo": {
+   "value": -0.5083012026419558,
+   "display": "-0.508",
+   "source": "runs/robustness/EXACT_CI.json#e2.A2.HQ_vs_flexible_classical@256.ci_exact[0]"
+  },
+  "e2_A2_flex_256_hi": {
+   "value": -0.10261627905434334,
+   "display": "-0.103",
+   "source": "runs/robustness/EXACT_CI.json#e2.A2.HQ_vs_flexible_classical@256.ci_exact[1]"
+  },
+  "e2_A2_hmm_256": {
+   "value": 0.31636352119074407,
+   "display": "+0.316",
+   "source": "runs/e2/SUMMARY.json#A2.HQ_vs_HMM@256.delta"
+  },
+  "e2_A2_hmm_256_lo": {
+   "value": 0.10604251213890795,
+   "display": "+0.106",
+   "source": "runs/robustness/EXACT_CI.json#e2.A2.HQ_vs_HMM@256.ci_exact[0]"
+  },
+  "e2_A2_hmm_256_hi": {
+   "value": 0.5266845302425802,
+   "display": "+0.527",
+   "source": "runs/robustness/EXACT_CI.json#e2.A2.HQ_vs_HMM@256.ci_exact[1]"
+  },
+  "e2_B_flex_150": {
+   "value": -0.001283614672636102,
+   "display": "-0.001",
+   "source": "runs/e2/SUMMARY.json#B.HQ_vs_flexible_classical@150.delta"
+  },
+  "e2_B_flex_150_lo": {
+   "value": -0.003957417088231684,
+   "display": "-0.004",
+   "source": "runs/robustness/EXACT_CI.json#e2.B.HQ_vs_flexible_classical@150.ci_exact[0]"
+  },
+  "e2_B_flex_150_hi": {
+   "value": 0.0012057546280441426,
+   "display": "+0.001",
+   "source": "runs/robustness/EXACT_CI.json#e2.B.HQ_vs_flexible_classical@150.ci_exact[1]"
+  },
+  "e2_B_hmm_150": {
+   "value": -0.001453266079849802,
+   "display": "-0.001",
+   "source": "runs/e2/SUMMARY.json#B.HQ_vs_HMM@150.delta"
+  },
+  "e2_B_hmm_150_lo": {
+   "value": -0.0019137953572204186,
+   "display": "-0.002",
+   "source": "runs/robustness/EXACT_CI.json#e2.B.HQ_vs_HMM@150.ci_exact[0]"
+  },
+  "e2_B_hmm_150_hi": {
+   "value": -0.0010378811768395428,
+   "display": "-0.001",
+   "source": "runs/robustness/EXACT_CI.json#e2.B.HQ_vs_HMM@150.ci_exact[1]"
+  },
+  "e2_B_flex_500": {
+   "value": -0.0015958123876940317,
+   "display": "-0.002",
+   "source": "runs/e2/SUMMARY.json#B.HQ_vs_flexible_classical@500.delta"
+  },
+  "e2_B_flex_500_lo": {
+   "value": -0.003907357586452801,
+   "display": "-0.004",
+   "source": "runs/robustness/EXACT_CI.json#e2.B.HQ_vs_flexible_classical@500.ci_exact[0]"
+  },
+  "e2_B_flex_500_hi": {
+   "value": 0.00019490963692490496,
+   "display": "+0.000",
+   "source": "runs/robustness/EXACT_CI.json#e2.B.HQ_vs_flexible_classical@500.ci_exact[1]"
+  },
+  "e2_B_hmm_500": {
+   "value": -0.0027714450959462483,
+   "display": "-0.003",
+   "source": "runs/e2/SUMMARY.json#B.HQ_vs_HMM@500.delta"
+  },
+  "e2_B_hmm_500_lo": {
+   "value": -0.004488745151346469,
+   "display": "-0.004",
+   "source": "runs/robustness/EXACT_CI.json#e2.B.HQ_vs_HMM@500.ci_exact[0]"
+  },
+  "e2_B_hmm_500_hi": {
+   "value": -0.0010340194809957378,
+   "display": "-0.001",
+   "source": "runs/robustness/EXACT_CI.json#e2.B.HQ_vs_HMM@500.ci_exact[1]"
+  },
+  "e2_B2_flex_150": {
+   "value": -0.023059095396070373,
+   "display": "-0.023",
+   "source": "runs/e2/SUMMARY.json#B2.HQ_vs_flexible_classical@150.delta"
+  },
+  "e2_B2_flex_150_lo": {
+   "value": -0.025675535558475588,
+   "display": "-0.026",
+   "source": "runs/robustness/EXACT_CI.json#e2.B2.HQ_vs_flexible_classical@150.ci_exact[0]"
+  },
+  "e2_B2_flex_150_hi": {
+   "value": -0.020515674527557305,
+   "display": "-0.021",
+   "source": "runs/robustness/EXACT_CI.json#e2.B2.HQ_vs_flexible_classical@150.ci_exact[1]"
+  },
+  "e2_B2_hmm_150": {
+   "value": 0.03767979497636181,
+   "display": "+0.038",
+   "source": "runs/e2/SUMMARY.json#B2.HQ_vs_HMM@150.delta"
+  },
+  "e2_B2_hmm_150_lo": {
+   "value": 0.031078099131669944,
+   "display": "+0.031",
+   "source": "runs/robustness/EXACT_CI.json#e2.B2.HQ_vs_HMM@150.ci_exact[0]"
+  },
+  "e2_B2_hmm_150_hi": {
+   "value": 0.04401894079423766,
+   "display": "+0.044",
+   "source": "runs/robustness/EXACT_CI.json#e2.B2.HQ_vs_HMM@150.ci_exact[1]"
+  },
+  "e2_B2_flex_500": {
+   "value": -0.01838752863251314,
+   "display": "-0.018",
+   "source": "runs/e2/SUMMARY.json#B2.HQ_vs_flexible_classical@500.delta"
+  },
+  "e2_B2_flex_500_lo": {
+   "value": -0.025017311358489967,
+   "display": "-0.025",
+   "source": "runs/robustness/EXACT_CI.json#e2.B2.HQ_vs_flexible_classical@500.ci_exact[0]"
+  },
+  "e2_B2_flex_500_hi": {
+   "value": -0.012201091682410408,
+   "display": "-0.012",
+   "source": "runs/robustness/EXACT_CI.json#e2.B2.HQ_vs_flexible_classical@500.ci_exact[1]"
+  },
+  "e2_B2_hmm_500": {
+   "value": 0.03477132875789973,
+   "display": "+0.035",
+   "source": "runs/e2/SUMMARY.json#B2.HQ_vs_HMM@500.delta"
+  },
+  "e2_B2_hmm_500_lo": {
+   "value": 0.0245010409405919,
+   "display": "+0.025",
+   "source": "runs/robustness/EXACT_CI.json#e2.B2.HQ_vs_HMM@500.ci_exact[0]"
+  },
+  "e2_B2_hmm_500_hi": {
+   "value": 0.04292516280591161,
+   "display": "+0.043",
+   "source": "runs/robustness/EXACT_CI.json#e2.B2.HQ_vs_HMM@500.ci_exact[1]"
+  },
+  "e2_B3_flex_150": {
+   "value": -0.16204206172018376,
+   "display": "-0.162",
+   "source": "runs/e2/SUMMARY.json#B3.HQ_vs_flexible_classical@150.delta"
+  },
+  "e2_B3_flex_150_lo": {
+   "value": -0.18099534110627596,
+   "display": "-0.181",
+   "source": "runs/robustness/EXACT_CI.json#e2.B3.HQ_vs_flexible_classical@150.ci_exact[0]"
+  },
+  "e2_B3_flex_150_hi": {
+   "value": -0.1526645555622021,
+   "display": "-0.153",
+   "source": "runs/robustness/EXACT_CI.json#e2.B3.HQ_vs_flexible_classical@150.ci_exact[1]"
+  },
+  "e2_B3_hmm_150": {
+   "value": 0.05322932202387065,
+   "display": "+0.053",
+   "source": "runs/e2/SUMMARY.json#B3.HQ_vs_HMM@150.delta"
+  },
+  "e2_B3_hmm_150_lo": {
+   "value": 0.04769493685335294,
+   "display": "+0.048",
+   "source": "runs/robustness/EXACT_CI.json#e2.B3.HQ_vs_HMM@150.ci_exact[0]"
+  },
+  "e2_B3_hmm_150_hi": {
+   "value": 0.05986889579205372,
+   "display": "+0.060",
+   "source": "runs/robustness/EXACT_CI.json#e2.B3.HQ_vs_HMM@150.ci_exact[1]"
+  },
+  "e2_B3_flex_500": {
+   "value": -0.1311041474910032,
+   "display": "-0.131",
+   "source": "runs/e2/SUMMARY.json#B3.HQ_vs_flexible_classical@500.delta"
+  },
+  "e2_B3_flex_500_lo": {
+   "value": -0.14323740802879126,
+   "display": "-0.143",
+   "source": "runs/robustness/EXACT_CI.json#e2.B3.HQ_vs_flexible_classical@500.ci_exact[0]"
+  },
+  "e2_B3_flex_500_hi": {
+   "value": -0.12193276471129638,
+   "display": "-0.122",
+   "source": "runs/robustness/EXACT_CI.json#e2.B3.HQ_vs_flexible_classical@500.ci_exact[1]"
+  },
+  "e2_B3_hmm_500": {
+   "value": 0.07030849831495434,
+   "display": "+0.070",
+   "source": "runs/e2/SUMMARY.json#B3.HQ_vs_HMM@500.delta"
+  },
+  "e2_B3_hmm_500_lo": {
+   "value": 0.05352067799966988,
+   "display": "+0.054",
+   "source": "runs/robustness/EXACT_CI.json#e2.B3.HQ_vs_HMM@500.ci_exact[0]"
+  },
+  "e2_B3_hmm_500_hi": {
+   "value": 0.08733366931809033,
+   "display": "+0.087",
+   "source": "runs/robustness/EXACT_CI.json#e2.B3.HQ_vs_HMM@500.ci_exact[1]"
+  },
+  "e2_A2_HQ3": {
+   "value": 0.14323910633804662,
+   "display": "0.14",
+   "source": "runs/e2/SUMMARY.json#A2.curves.HQ.3.mean"
+  },
+  "e2_A2_LRU_min": {
+   "value": 0.5019886826485541,
+   "display": "0.50",
+   "source": "runs/e2/SUMMARY.json#A2.curves.LRU.*.mean (min)"
+  },
+  "e2_A2_LRU_max": {
+   "value": 0.7750796049318738,
+   "display": "0.78",
+   "source": "runs/e2/SUMMARY.json#A2.curves.LRU.*.mean (max)"
+  },
+  "e2_A1_HQ2": {
+   "value": 0.9836925132407209,
+   "display": "0.984",
+   "source": "runs/e2/SUMMARY.json#A1.curves.HQ.2.mean"
+  },
+  "e2_A1_HQ2_p": {
+   "value": 16,
+   "display": "16",
+   "source": "runs/e2/SUMMARY.json#A1.curves.HQ.2.params"
+  },
+  "e2_A1_HMM4": {
+   "value": 0.6187239370388001,
+   "display": "0.619",
+   "source": "runs/e2/SUMMARY.json#A1.curves.HMM.4.mean"
+  },
+  "e2_A1_HMM4_p": {
+   "value": 19,
+   "display": "19",
+   "source": "runs/e2/SUMMARY.json#A1.curves.HMM.4.params"
+  },
+  "e2_B_best_classical": {
+   "value": 0.11770927339072557,
+   "display": "0.118",
+   "source": "runs/e2/SUMMARY.json#B.curves.(GRU|LRU|HMM).*.mean (max)"
+  },
+  "e2_B_best_hq": {
+   "value": 0.11529663827269783,
+   "display": "0.115",
+   "source": "runs/e2/SUMMARY.json#B.curves.HQ.*.mean (max)"
+  },
+  "e2_B_markov1": {
+   "value": 0.07672535117333797,
+   "display": "0.077",
+   "source": "runs/e2/SUMMARY.json#B.curves.MARKOV1.0.mean"
+  },
+  "e2_B2_best_classical": {
+   "value": 0.3094863132171963,
+   "display": "0.309",
+   "source": "runs/e2/SUMMARY.json#B2.curves.(GRU|LRU|HMM).*.mean (max)"
+  },
+  "e2_B2_best_hq": {
+   "value": 0.2893598673811184,
+   "display": "0.289",
+   "source": "runs/e2/SUMMARY.json#B2.curves.HQ.*.mean (max)"
+  },
+  "e2_B2_markov1": {
+   "value": 0.21794875087005006,
+   "display": "0.218",
+   "source": "runs/e2/SUMMARY.json#B2.curves.MARKOV1.0.mean"
+  },
+  "e2_B3_best_classical": {
+   "value": 0.5792793460942409,
+   "display": "0.579",
+   "source": "runs/e2/SUMMARY.json#B3.curves.(GRU|LRU|HMM).*.mean (max)"
+  },
+  "e2_B3_best_hq": {
+   "value": 0.42458112441407475,
+   "display": "0.425",
+   "source": "runs/e2/SUMMARY.json#B3.curves.HQ.*.mean (max)"
+  },
+  "e2_B3_markov1": {
+   "value": 0.24211340886604937,
+   "display": "0.242",
+   "source": "runs/e2/SUMMARY.json#B3.curves.MARKOV1.0.mean"
+  },
+  "e2_posthoc_lr03": {
+   "value": 0.20558703841748527,
+   "display": "0.206",
+   "source": "runs/e2-posthoc/st6000/e2-A2-HQ3-s0-lr0.03.json#captured fraction (queue_e2.metric)"
+  },
+  "e2_posthoc_st20k": {
+   "value": 0.2141907287446243,
+   "display": "0.214",
+   "source": "runs/e2-posthoc/st20000/e2-A2-HQ3-s0-lr0.01.json#captured fraction (queue_e2.metric)"
+  },
+  "rob_L_plateau_n": {
+   "value": 8,
+   "display": "8",
+   "source": "runs/robustness/ROBUSTNESS.json#simple20_plateau.L.n_above_0_02"
+  },
+  "rob_C_plateau_n": {
+   "value": 10,
+   "display": "10",
+   "source": "runs/robustness/ROBUSTNESS.json#simple20_plateau.C.n_above_0_02"
+  },
+  "rob_K_inrange": {
+   "value": 0.0017366273718761548,
+   "display": "0.0017",
+   "source": "runs/robustness/ROBUSTNESS.json#in_range_kl.simple-20.K"
+  },
+  "rob_U2_inrange": {
+   "value": 0.032512856559421294,
+   "display": "0.033",
+   "source": "runs/robustness/ROBUSTNESS.json#in_range_kl.simple-20.U2"
+  },
+  "rob_U2_probe_min": {
+   "value": 0.03668157749319372,
+   "display": "0.037",
+   "source": "runs/probe/simple-20-U2-s101-*.json#windows.in_range_1_50.kl (min)"
+  },
+  "rob_U2_probe_max": {
+   "value": 0.05144776387758731,
+   "display": "0.051",
+   "source": "runs/probe/simple-20-U2-s101-*.json#windows.in_range_1_50.kl (max)"
+  },
+  "rob_h1K_simple": {
+   "value": 0.02397219384725395,
+   "display": "0.0240",
+   "source": "runs/robustness/ROBUSTNESS.json#h1_vs_converged_K.simple.mean"
+  },
+  "rob_h1K_simple_lo": {
+   "value": 0.02186420993470742,
+   "display": "0.0219",
+   "source": "runs/robustness/ROBUSTNESS.json#h1_vs_converged_K.simple.boot_ci[0]"
+  },
+  "rob_h1K_simple_hi": {
+   "value": 0.02624257595219434,
+   "display": "0.0262",
+   "source": "runs/robustness/ROBUSTNESS.json#h1_vs_converged_K.simple.boot_ci[1]"
+  },
+  "rob_h1K_meta": {
+   "value": 0.019856280507145444,
+   "display": "0.0199",
+   "source": "runs/robustness/ROBUSTNESS.json#h1_vs_converged_K.metastable.mean"
+  },
+  "h2_perm_p": {
+   "value": 0.16666666666666666,
+   "display": "0.167",
+   "source": "runs/robustness/ROBUSTNESS.json#h2_spearman_permutation_p_one_sided"
+  },
+  "marg_simple20": {
+   "value": 0.00017401417938933737,
+   "display": "1.7e-04",
+   "source": "runs/robustness/ROBUSTNESS.json#marginal_predictor_extrap_kl.simple-20"
+  },
+  "h4hmm_simple": {
+   "value": 0.0003419773035049633,
+   "display": "+0.00034",
+   "source": "runs/robustness/ROBUSTNESS.json#h4_with_hmm_eligible.simple.mean"
+  },
+  "h4hmm_simple_lo": {
+   "value": 0.00019816324212485424,
+   "display": "+0.00020",
+   "source": "runs/robustness/ROBUSTNESS.json#h4_with_hmm_eligible.simple.t_ci[0]"
+  },
+  "h4hmm_simple_hi": {
+   "value": 0.0004857913648850723,
+   "display": "+0.00049",
+   "source": "runs/robustness/ROBUSTNESS.json#h4_with_hmm_eligible.simple.t_ci[1]"
+  },
+  "h4hmm_simple_blo": {
+   "value": 0.00023477638596645128,
+   "display": "+0.00023",
+   "source": "runs/robustness/ROBUSTNESS.json#h4_with_hmm_eligible.simple.boot_ci[0]"
+  },
+  "h4hmm_simple_bhi": {
+   "value": 0.0004680389813735557,
+   "display": "+0.00047",
+   "source": "runs/robustness/ROBUSTNESS.json#h4_with_hmm_eligible.simple.boot_ci[1]"
+  },
+  "h4hmm_metastable": {
+   "value": 0.0018550815175417926,
+   "display": "+0.00186",
+   "source": "runs/robustness/ROBUSTNESS.json#h4_with_hmm_eligible.metastable.mean"
+  },
+  "h4hmm_metastable_lo": {
+   "value": -0.00024402490616091998,
+   "display": "-0.00024",
+   "source": "runs/robustness/ROBUSTNESS.json#h4_with_hmm_eligible.metastable.t_ci[0]"
+  },
+  "h4hmm_metastable_hi": {
+   "value": 0.003954187941244506,
+   "display": "+0.00395",
+   "source": "runs/robustness/ROBUSTNESS.json#h4_with_hmm_eligible.metastable.t_ci[1]"
+  },
+  "h4hmm_metastable_blo": {
+   "value": 0.0005907194253126061,
+   "display": "+0.00059",
+   "source": "runs/robustness/ROBUSTNESS.json#h4_with_hmm_eligible.metastable.boot_ci[0]"
+  },
+  "h4hmm_metastable_bhi": {
+   "value": 0.0038219408741921703,
+   "display": "+0.00382",
+   "source": "runs/robustness/ROBUSTNESS.json#h4_with_hmm_eligible.metastable.boot_ci[1]"
+  },
+  "h4hmm_action": {
+   "value": 0.001144731184030493,
+   "display": "+0.00114",
+   "source": "runs/robustness/ROBUSTNESS.json#h4_with_hmm_eligible.action.mean"
+  },
+  "h4hmm_action_lo": {
+   "value": 0.0005555780436733973,
+   "display": "+0.00056",
+   "source": "runs/robustness/ROBUSTNESS.json#h4_with_hmm_eligible.action.t_ci[0]"
+  },
+  "h4hmm_action_hi": {
+   "value": 0.0017338843243875888,
+   "display": "+0.00173",
+   "source": "runs/robustness/ROBUSTNESS.json#h4_with_hmm_eligible.action.t_ci[1]"
+  },
+  "h4hmm_action_blo": {
+   "value": 0.0007025131335806202,
+   "display": "+0.00070",
+   "source": "runs/robustness/ROBUSTNESS.json#h4_with_hmm_eligible.action.boot_ci[0]"
+  },
+  "h4hmm_action_bhi": {
+   "value": 0.001648815937023838,
+   "display": "+0.00165",
+   "source": "runs/robustness/ROBUSTNESS.json#h4_with_hmm_eligible.action.boot_ci[1]"
+  },
+  "e2_A2_seed0": {
+   "value": 0.20613751017900617,
+   "display": "0.206",
+   "source": "runs/robustness/ROBUSTNESS.json#e2_A2_HQ3_seed0_original_cf"
+  },
+  "marg_meta20": {
+   "value": 5.7993449795407204e-05,
+   "display": "5.8e-05",
+   "source": "runs/robustness/ROBUSTNESS.json#marginal_predictor_extrap_kl.metastable-20"
+  },
+  "marg_simple80": {
+   "value": 0.03261565972836815,
+   "display": "0.0326",
+   "source": "runs/robustness/ROBUSTNESS.json#marginal_predictor_extrap_kl.simple-80"
+  },
+  "marg_meta80": {
+   "value": 0.011976811641179766,
+   "display": "0.0120",
+   "source": "runs/robustness/ROBUSTNESS.json#marginal_predictor_extrap_kl.metastable-80"
+  },
+  "cf_s80_U2": {
+   "value": -1.6348433285504456,
+   "display": "-1.63",
+   "source": "runs/robustness/ROBUSTNESS.json#captured_fraction_extrap.simple-80.U2"
+  },
+  "cf_s80_L": {
+   "value": 0.11863464338716867,
+   "display": "0.12",
+   "source": "runs/robustness/ROBUSTNESS.json#captured_fraction_extrap.simple-80.L"
+  },
+  "cf_s80_K": {
+   "value": 0.8236194934681955,
+   "display": "0.82",
+   "source": "runs/robustness/ROBUSTNESS.json#captured_fraction_extrap.simple-80.K"
+  },
+  "cf_s80_C": {
+   "value": 0.20993513205519188,
+   "display": "0.21",
+   "source": "runs/robustness/ROBUSTNESS.json#captured_fraction_extrap.simple-80.C"
+  },
+  "cf_s80_GRU": {
+   "value": 0.46201080559348484,
+   "display": "0.46",
+   "source": "runs/robustness/ROBUSTNESS.json#captured_fraction_extrap.simple-80.GRU"
+  },
+  "cf_s80_LRU": {
+   "value": 0.29024770034483227,
+   "display": "0.29",
+   "source": "runs/robustness/ROBUSTNESS.json#captured_fraction_extrap.simple-80.LRU"
+  },
+  "cf_s80_HMM": {
+   "value": 0.9989089328447524,
+   "display": "1.00",
+   "source": "runs/robustness/ROBUSTNESS.json#captured_fraction_extrap.simple-80.HMM"
+  },
+  "cf_m80_U2": {
+   "value": -3.0934775704420687,
+   "display": "-3.09",
+   "source": "runs/robustness/ROBUSTNESS.json#captured_fraction_extrap.metastable-80.U2"
+  },
+  "cf_m80_L": {
+   "value": 0.7302954621845779,
+   "display": "0.73",
+   "source": "runs/robustness/ROBUSTNESS.json#captured_fraction_extrap.metastable-80.L"
+  },
+  "cf_m80_L1": {
+   "value": 0.7595690815553058,
+   "display": "0.76",
+   "source": "runs/robustness/ROBUSTNESS.json#captured_fraction_extrap.metastable-80.L1"
+  },
+  "cf_m80_K": {
+   "value": 0.8604689992620707,
+   "display": "0.86",
+   "source": "runs/robustness/ROBUSTNESS.json#captured_fraction_extrap.metastable-80.K"
+  },
+  "cf_m80_C": {
+   "value": 0.9420707956987623,
+   "display": "0.94",
+   "source": "runs/robustness/ROBUSTNESS.json#captured_fraction_extrap.metastable-80.C"
+  },
+  "cf_m80_GRU": {
+   "value": 0.7239939392266399,
+   "display": "0.72",
+   "source": "runs/robustness/ROBUSTNESS.json#captured_fraction_extrap.metastable-80.GRU"
+  },
+  "cf_m80_LRU": {
+   "value": -0.16061608947640238,
+   "display": "-0.16",
+   "source": "runs/robustness/ROBUSTNESS.json#captured_fraction_extrap.metastable-80.LRU"
+  },
+  "cf_m80_HMM": {
+   "value": 0.9958983666452108,
+   "display": "1.00",
+   "source": "runs/robustness/ROBUSTNESS.json#captured_fraction_extrap.metastable-80.HMM"
+  },
+  "cf_s20_U2": {
+   "value": -137.2381849213243,
+   "display": "-137.24",
+   "source": "runs/robustness/ROBUSTNESS.json#captured_fraction_extrap.simple-20.U2"
+  },
+  "cf_s20_L": {
+   "value": -0.9792435046810168,
+   "display": "-0.98",
+   "source": "runs/robustness/ROBUSTNESS.json#captured_fraction_extrap.simple-20.L"
+  },
+  "cf_s20_L1": {
+   "value": -1.2731005206293053,
+   "display": "-1.27",
+   "source": "runs/robustness/ROBUSTNESS.json#captured_fraction_extrap.simple-20.L1"
+  },
+  "cf_s20_K": {
+   "value": 0.5218179208512024,
+   "display": "0.52",
+   "source": "runs/robustness/ROBUSTNESS.json#captured_fraction_extrap.simple-20.K"
+  },
+  "cf_s20_C": {
+   "value": -0.31216142255969337,
+   "display": "-0.31",
+   "source": "runs/robustness/ROBUSTNESS.json#captured_fraction_extrap.simple-20.C"
+  },
+  "cf_s20_GRU": {
+   "value": -0.3744928946164525,
+   "display": "-0.37",
+   "source": "runs/robustness/ROBUSTNESS.json#captured_fraction_extrap.simple-20.GRU"
+  },
+  "cf_s20_LRU": {
+   "value": -1.0410759942751078,
+   "display": "-1.04",
+   "source": "runs/robustness/ROBUSTNESS.json#captured_fraction_extrap.simple-20.LRU"
+  },
+  "cf_s20_HMM": {
+   "value": 0.9859831492908243,
+   "display": "0.99",
+   "source": "runs/robustness/ROBUSTNESS.json#captured_fraction_extrap.simple-20.HMM"
+  },
+  "cf_s20_U1": {
+   "value": -184.0063073143235,
+   "display": "-184.01",
+   "source": "runs/robustness/ROBUSTNESS.json#captured_fraction_extrap.simple-20.U1"
+  },
+  "cf_s20_U4": {
+   "value": -113.5373922351069,
+   "display": "-113.54",
+   "source": "runs/robustness/ROBUSTNESS.json#captured_fraction_extrap.simple-20.U4"
+  },
+  "cf_s20_U8": {
+   "value": -136.43048079201478,
+   "display": "-136.43",
+   "source": "runs/robustness/ROBUSTNESS.json#captured_fraction_extrap.simple-20.U8"
+  },
+  "udev_U1_003": {
+   "value": 0.0329890585579889,
+   "display": "0.0330",
+   "source": "runs/robustness/ROBUSTNESS.json#unitary_dev_extrap_by_lr.U1.by_lr.0.003.extrap_kl"
+  },
+  "udev_U1_01": {
+   "value": 0.032424777141317494,
+   "display": "0.0324",
+   "source": "runs/robustness/ROBUSTNESS.json#unitary_dev_extrap_by_lr.U1.by_lr.0.01.extrap_kl"
+  },
+  "udev_U2_003": {
+   "value": 0.03041102321502591,
+   "display": "0.0304",
+   "source": "runs/robustness/ROBUSTNESS.json#unitary_dev_extrap_by_lr.U2.by_lr.0.003.extrap_kl"
+  },
+  "udev_U2_01": {
+   "value": 0.014392781582710243,
+   "display": "0.0144",
+   "source": "runs/robustness/ROBUSTNESS.json#unitary_dev_extrap_by_lr.U2.by_lr.0.01.extrap_kl"
+  },
+  "udev_U4_003": {
+   "value": 0.013914726803641312,
+   "display": "0.0139",
+   "source": "runs/robustness/ROBUSTNESS.json#unitary_dev_extrap_by_lr.U4.by_lr.0.003.extrap_kl"
+  },
+  "udev_U4_01": {
+   "value": 0.0071191099983903905,
+   "display": "0.0071",
+   "source": "runs/robustness/ROBUSTNESS.json#unitary_dev_extrap_by_lr.U4.by_lr.0.01.extrap_kl"
+  },
+  "udev_U8_003": {
+   "value": 0.05103585860717202,
+   "display": "0.0510",
+   "source": "runs/robustness/ROBUSTNESS.json#unitary_dev_extrap_by_lr.U8.by_lr.0.003.extrap_kl"
+  },
+  "udev_U8_01": {
+   "value": 0.0035794684686188544,
+   "display": "0.0036",
+   "source": "runs/robustness/ROBUSTNESS.json#unitary_dev_extrap_by_lr.U8.by_lr.0.01.extrap_kl"
+  },
+  "udevL_U2_003": {
+   "value": 0.030162635247961336,
+   "display": "0.0302",
+   "source": "runs/robustness/ROBUSTNESS.json#unitary_dev_minus_L.by_model.U2.0.003"
+  },
+  "udevL_U2_01": {
+   "value": 0.01414439361564567,
+   "display": "0.0141",
+   "source": "runs/robustness/ROBUSTNESS.json#unitary_dev_minus_L.by_model.U2.0.01"
+  },
+  "udevL_U4_003": {
+   "value": 0.013666338836576739,
+   "display": "0.0137",
+   "source": "runs/robustness/ROBUSTNESS.json#unitary_dev_minus_L.by_model.U4.0.003"
+  },
+  "udevL_U4_01": {
+   "value": 0.006870722031325816,
+   "display": "0.0069",
+   "source": "runs/robustness/ROBUSTNESS.json#unitary_dev_minus_L.by_model.U4.0.01"
+  },
+  "udevL_U8_003": {
+   "value": 0.05078747064010744,
+   "display": "0.0508",
+   "source": "runs/robustness/ROBUSTNESS.json#unitary_dev_minus_L.by_model.U8.0.003"
+  },
+  "udevL_U8_01": {
+   "value": 0.00333108050155428,
+   "display": "0.0033",
+   "source": "runs/robustness/ROBUSTNESS.json#unitary_dev_minus_L.by_model.U8.0.01"
+  },
+  "udev_L_extrap": {
+   "value": 0.0002483879670645743,
+   "display": "0.00025",
+   "source": "runs/robustness/ROBUSTNESS.json#unitary_dev_minus_L.L_extrap_kl"
+  },
+  "h1mm_mean": {
+   "value": 0.023659852587588934,
+   "display": "0.0237",
+   "source": "runs/robustness/ROBUSTNESS.json#h1_movable_matched_U2_minus_L1.mean"
+  },
+  "h1mm_tlo": {
+   "value": 0.020940390985026237,
+   "display": "0.0209",
+   "source": "runs/robustness/ROBUSTNESS.json#h1_movable_matched_U2_minus_L1.t_ci[0]"
+  },
+  "h1mm_thi": {
+   "value": 0.02637931419015163,
+   "display": "0.0264",
+   "source": "runs/robustness/ROBUSTNESS.json#h1_movable_matched_U2_minus_L1.t_ci[1]"
+  },
+  "h1mm_n": {
+   "value": 10,
+   "display": "10",
+   "source": "runs/robustness/ROBUSTNESS.json#h1_movable_matched_U2_minus_L1.n"
+  },
+  "u2_seed_min": {
+   "value": 0.0168,
+   "display": "0.0168",
+   "source": "runs/robustness/ROBUSTNESS.json#u2_confirm_inrange_min"
+  },
+  "e2_hmm64": {
+   "value": 0.9013979005135007,
+   "display": "0.901",
+   "source": "runs/robustness/ROBUSTNESS.json#e2_A1_hmm_at_budget.64"
+  },
+  "e2_ctrlmax64": {
+   "value": 0.09860209948649934,
+   "display": "0.099",
+   "source": "runs/robustness/ROBUSTNESS.json#1 - e2_A1_hmm_at_budget.64"
+  },
+  "e2_hmm256": {
+   "value": 0.9677324243004055,
+   "display": "0.968",
+   "source": "runs/robustness/ROBUSTNESS.json#e2_A1_hmm_at_budget.256"
+  },
+  "e2_ctrlmax256": {
+   "value": 0.032267575699594486,
+   "display": "0.032",
+   "source": "runs/robustness/ROBUSTNESS.json#1 - e2_A1_hmm_at_budget.256"
+  },
+  "e2_A1_HQ8": {
+   "value": 0.9592248043763227,
+   "display": "0.959",
+   "source": "runs/robustness/ROBUSTNESS.json#e2_A1_hq_by_size.8"
+  },
+  "e2_B_emp": {
+   "value": 0.0713886673098838,
+   "display": "0.071",
+   "source": "runs/robustness/ROBUSTNESS.json#e2_emp_rpss.B"
+  },
+  "e2_B2_emp": {
+   "value": -0.018078655010946187,
+   "display": "-0.018",
+   "source": "runs/robustness/ROBUSTNESS.json#e2_emp_rpss.B2"
+  },
+  "e2_B3_emp": {
+   "value": -8.577484538085933e-05,
+   "display": "-0.000",
+   "source": "runs/robustness/ROBUSTNESS.json#e2_emp_rpss.B3"
+  },
+  "e1_univ": {
+   "value": -0.1129910945892334,
+   "display": "-0.113",
+   "source": "runs/robustness/ROBUSTNESS.json#e1_K_minus_L_by_fold.univ"
+  },
+  "e1_zara01": {
+   "value": -0.041206697622934975,
+   "display": "-0.041",
+   "source": "runs/robustness/ROBUSTNESS.json#e1_K_minus_L_by_fold.zara01"
+  },
+  "holmreg_H2": {
+   "value": 0.3333333333333333,
+   "display": "0.333",
+   "source": "runs/robustness/ROBUSTNESS.json#holm_registered_conjunction.adjusted.H2"
+  },
+  "holmreg_H1s": {
+   "value": 2.0598202446784358e-08,
+   "display": "2.1e-08",
+   "source": "runs/robustness/ROBUSTNESS.json#holm_registered_conjunction.adjusted.H1_simple"
+  },
+  "med80_L": {
+   "value": 0.014645419112879452,
+   "display": "0.015",
+   "source": "runs/robustness/ROBUSTNESS.json#simple80_inrange_median.L"
+  },
+  "med80_K": {
+   "value": 0.0056632036279433895,
+   "display": "0.006",
+   "source": "runs/robustness/ROBUSTNESS.json#simple80_inrange_median.K"
+  },
+  "med80_GRU": {
+   "value": 0.005535498184709466,
+   "display": "0.006",
+   "source": "runs/robustness/ROBUSTNESS.json#simple80_inrange_median.GRU"
+  },
+  "med80_C": {
+   "value": 0.10476773514290605,
+   "display": "0.105",
+   "source": "runs/robustness/ROBUSTNESS.json#simple80_inrange_median.C"
+  },
+  "cdev20_lo": {
+   "value": 0.029749477158569095,
+   "display": "0.030",
+   "source": "runs/robustness/ROBUSTNESS.json#C_dev_inrange_by_lr.simple-20@* (min)"
+  },
+  "cdev20_hi": {
+   "value": 0.030929078831754872,
+   "display": "0.031",
+   "source": "runs/robustness/ROBUSTNESS.json#C_dev_inrange_by_lr.simple-20@* (max)"
+  },
+  "cdev80_lo": {
+   "value": 0.10223876836025018,
+   "display": "0.102",
+   "source": "runs/robustness/ROBUSTNESS.json#C_dev_inrange_by_lr.simple-80@* (min)"
+  },
+  "cdev80_hi": {
+   "value": 0.10611697480188816,
+   "display": "0.106",
+   "source": "runs/robustness/ROBUSTNESS.json#C_dev_inrange_by_lr.simple-80@* (max)"
+  },
+  "e1_hmmtw_nll": {
+   "value": 1.2002977091738556,
+   "display": "1.200",
+   "source": "runs/robustness/ROBUSTNESS.json#e1_hmm_trainwindow.extrap_nll_mean"
+  },
+  "e1_hmmtw_minusL": {
+   "value": 0.02010873542914531,
+   "display": "+0.020",
+   "source": "runs/robustness/ROBUSTNESS.json#e1_hmm_trainwindow.minus_L_mean"
+  },
+  "h1_U4_L": {
+   "value": 0.01958671388490805,
+   "display": "0.0196",
+   "source": "runs/robustness/ROBUSTNESS.json#h1_larger_unitary_minus_L.U4.mean"
+  },
+  "h1_U4_L_tlo": {
+   "value": 0.014263183321958877,
+   "display": "0.0143",
+   "source": "runs/robustness/ROBUSTNESS.json#h1_larger_unitary_minus_L.U4.t_ci[0]"
+  },
+  "h1_U4_L_thi": {
+   "value": 0.02491024444785722,
+   "display": "0.0249",
+   "source": "runs/robustness/ROBUSTNESS.json#h1_larger_unitary_minus_L.U4.t_ci[1]"
+  },
+  "h1_U8_L": {
+   "value": 0.0235704359038258,
+   "display": "0.0236",
+   "source": "runs/robustness/ROBUSTNESS.json#h1_larger_unitary_minus_L.U8.mean"
+  },
+  "h1_U8_L_tlo": {
+   "value": 0.01707591054090011,
+   "display": "0.0171",
+   "source": "runs/robustness/ROBUSTNESS.json#h1_larger_unitary_minus_L.U8.t_ci[0]"
+  },
+  "h1_U8_L_thi": {
+   "value": 0.03006496126675149,
+   "display": "0.0301",
+   "source": "runs/robustness/ROBUSTNESS.json#h1_larger_unitary_minus_L.U8.t_ci[1]"
+  },
+  "inr_s20_U1": {
+   "value": 0.023949965906482046,
+   "display": "0.0239",
+   "source": "runs/robustness/ROBUSTNESS.json#in_range_kl.simple-20.U1"
+  },
+  "inr_s20_U2": {
+   "value": 0.032512856559421294,
+   "display": "0.0325",
+   "source": "runs/robustness/ROBUSTNESS.json#in_range_kl.simple-20.U2"
+  },
+  "inr_s20_U4": {
+   "value": 0.027285800279026245,
+   "display": "0.0273",
+   "source": "runs/robustness/ROBUSTNESS.json#in_range_kl.simple-20.U4"
+  },
+  "inr_s20_U8": {
+   "value": 0.02229210558712636,
+   "display": "0.0223",
+   "source": "runs/robustness/ROBUSTNESS.json#in_range_kl.simple-20.U8"
+  },
+  "inr_m80_C": {
+   "value": 0.00439129030781474,
+   "display": "0.0044",
+   "source": "runs/robustness/ROBUSTNESS.json#in_range_kl.metastable-80.C"
+  },
+  "inr_m80_L1": {
+   "value": 0.0038405205665576806,
+   "display": "0.0038",
+   "source": "runs/robustness/ROBUSTNESS.json#in_range_kl.metastable-80.L1"
+  },
+  "inr_m80_L": {
+   "value": 0.0037494032136468243,
+   "display": "0.0037",
+   "source": "runs/robustness/ROBUSTNESS.json#in_range_kl.metastable-80.L"
+  },
+  "f1_s20_L_50": {
+   "value": 0.0022216000000000002,
+   "display": "0.0022",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.simple-20.L.50"
+  },
+  "f1_s20_L_100": {
+   "value": 0.0002118,
+   "display": "0.00021",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.simple-20.L.100"
+  },
+  "f1_s20_L_200": {
+   "value": 0.0001356,
+   "display": "0.00014",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.simple-20.L.200"
+  },
+  "f1_s20_U2_50": {
+   "value": 0.0071744,
+   "display": "0.0072",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.simple-20.U2.50"
+  },
+  "f1_s20_U2_100": {
+   "value": 0.025390100000000006,
+   "display": "0.0254",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.simple-20.U2.100"
+  },
+  "f1_s20_U2_200": {
+   "value": 0.0212245,
+   "display": "0.0212",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.simple-20.U2.200"
+  },
+  "f1_s20_GRU_50": {
+   "value": 0.0010474999999999998,
+   "display": "0.0010",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.simple-20.GRU.50"
+  },
+  "f1_s20_GRU_100": {
+   "value": 0.0001725,
+   "display": "0.00017",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.simple-20.GRU.100"
+  },
+  "f1_s20_GRU_200": {
+   "value": 0.0001104,
+   "display": "0.00011",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.simple-20.GRU.200"
+  },
+  "f1_s20_C_50": {
+   "value": 0.0021203000000000003,
+   "display": "0.0021",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.simple-20.C.50"
+  },
+  "f1_s20_C_100": {
+   "value": 9.499999999999999e-05,
+   "display": "0.00009",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.simple-20.C.100"
+  },
+  "f1_s20_C_200": {
+   "value": 4.1299999999999994e-05,
+   "display": "0.00004",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.simple-20.C.200"
+  },
+  "f1_m20_L_50": {
+   "value": 0.0012674000000000001,
+   "display": "0.0013",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.metastable-20.L.50"
+  },
+  "f1_m20_L_100": {
+   "value": 0.0017285999999999998,
+   "display": "0.0017",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.metastable-20.L.100"
+  },
+  "f1_m20_L_200": {
+   "value": 0.0022933,
+   "display": "0.0023",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.metastable-20.L.200"
+  },
+  "f1_m20_U2_50": {
+   "value": 0.0049159,
+   "display": "0.0049",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.metastable-20.U2.50"
+  },
+  "f1_m20_U2_100": {
+   "value": 0.0230869,
+   "display": "0.0231",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.metastable-20.U2.100"
+  },
+  "f1_m20_U2_200": {
+   "value": 0.0170837,
+   "display": "0.0171",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.metastable-20.U2.200"
+  },
+  "f1_m20_GRU_50": {
+   "value": 0.0003987000000000001,
+   "display": "0.00040",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.metastable-20.GRU.50"
+  },
+  "f1_m20_GRU_100": {
+   "value": 0.0004121,
+   "display": "0.00041",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.metastable-20.GRU.100"
+  },
+  "f1_m20_GRU_200": {
+   "value": 0.0004299,
+   "display": "0.00043",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.metastable-20.GRU.200"
+  },
+  "f1_m20_C_50": {
+   "value": 0.0003336,
+   "display": "0.00033",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.metastable-20.C.50"
+  },
+  "f1_m20_C_100": {
+   "value": 0.0003078,
+   "display": "0.00031",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.metastable-20.C.100"
+  },
+  "f1_m20_C_200": {
+   "value": 0.0003105,
+   "display": "0.00031",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.metastable-20.C.200"
+  },
+  "f1_m80_L_50": {
+   "value": 0.0019541000000000003,
+   "display": "0.0020",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.metastable-80.L.50"
+  },
+  "f1_m80_L_100": {
+   "value": 0.0031291,
+   "display": "0.0031",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.metastable-80.L.100"
+  },
+  "f1_m80_L_200": {
+   "value": 0.0037142,
+   "display": "0.0037",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.metastable-80.L.200"
+  },
+  "f1_m80_U2_50": {
+   "value": 0.0042284,
+   "display": "0.0042",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.metastable-80.U2.50"
+  },
+  "f1_m80_U2_100": {
+   "value": 0.0390077,
+   "display": "0.0390",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.metastable-80.U2.100"
+  },
+  "f1_m80_U2_200": {
+   "value": 0.0824508,
+   "display": "0.0825",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.metastable-80.U2.200"
+  },
+  "f1_m80_GRU_50": {
+   "value": 0.0009098999999999999,
+   "display": "0.00091",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.metastable-80.GRU.50"
+  },
+  "f1_m80_GRU_100": {
+   "value": 0.0026049,
+   "display": "0.0026",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.metastable-80.GRU.100"
+  },
+  "f1_m80_GRU_200": {
+   "value": 0.005024600000000001,
+   "display": "0.0050",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.metastable-80.GRU.200"
+  },
+  "f1_m80_C_50": {
+   "value": 0.0010130999999999999,
+   "display": "0.0010",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.metastable-80.C.50"
+  },
+  "f1_m80_C_100": {
+   "value": 0.0006652,
+   "display": "0.00067",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.metastable-80.C.100"
+  },
+  "f1_m80_C_200": {
+   "value": 0.0005974999999999999,
+   "display": "0.00060",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.metastable-80.C.200"
+  },
+  "f1_s80_L_50": {
+   "value": 0.0204745,
+   "display": "0.0205",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.simple-80.L.50"
+  },
+  "f1_s80_L_100": {
+   "value": 0.0440403,
+   "display": "0.0440",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.simple-80.L.100"
+  },
+  "f1_s80_L_200": {
+   "value": 0.009792,
+   "display": "0.0098",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.simple-80.L.200"
+  },
+  "f1_s80_U2_50": {
+   "value": 0.0527846,
+   "display": "0.0528",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.simple-80.U2.50"
+  },
+  "f1_s80_U2_100": {
+   "value": 0.08997569999999999,
+   "display": "0.0900",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.simple-80.U2.100"
+  },
+  "f1_s80_U2_200": {
+   "value": 0.0930308,
+   "display": "0.0930",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.simple-80.U2.200"
+  },
+  "f1_s80_GRU_50": {
+   "value": 0.004872700000000001,
+   "display": "0.0049",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.simple-80.GRU.50"
+  },
+  "f1_s80_GRU_100": {
+   "value": 0.015135199999999998,
+   "display": "0.0151",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.simple-80.GRU.100"
+  },
+  "f1_s80_GRU_200": {
+   "value": 0.0274535,
+   "display": "0.0275",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.simple-80.GRU.200"
+  },
+  "f1_s80_C_50": {
+   "value": 0.056975,
+   "display": "0.0570",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.simple-80.C.50"
+  },
+  "f1_s80_C_100": {
+   "value": 0.0307732,
+   "display": "0.0308",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.simple-80.C.100"
+  },
+  "f1_s80_C_200": {
+   "value": 0.009249199999999999,
+   "display": "0.0092",
+   "source": "runs/robustness/ROBUSTNESS.json#fig1_horizon_kl.simple-80.C.200"
+  },
+  "pn_U1_1": {
+   "value": 640,
+   "display": "640",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.U1_1.nominal"
+  },
+  "pu_U1_1": {
+   "value": 576,
+   "display": "576",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.U1_1.movable"
+  },
+  "pn_U2_1": {
+   "value": 1024,
+   "display": "1,024",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.U2_1.nominal"
+  },
+  "pu_U2_1": {
+   "value": 768,
+   "display": "768",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.U2_1.movable"
+  },
+  "pn_U4_1": {
+   "value": 2560,
+   "display": "2,560",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.U4_1.nominal"
+  },
+  "pu_U4_1": {
+   "value": 1536,
+   "display": "1,536",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.U4_1.movable"
+  },
+  "pn_U8_1": {
+   "value": 8704,
+   "display": "8,704",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.U8_1.nominal"
+  },
+  "pu_U8_1": {
+   "value": 4608,
+   "display": "4,608",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.U8_1.movable"
+  },
+  "pn_L_1": {
+   "value": 1024,
+   "display": "1,024",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.L_1.nominal"
+  },
+  "pu_L_1": {
+   "value": 960,
+   "display": "960",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.L_1.movable"
+  },
+  "pn_L1_1": {
+   "value": 768,
+   "display": "768",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.L1_1.nominal"
+  },
+  "pu_L1_1": {
+   "value": 704,
+   "display": "704",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.L1_1.movable"
+  },
+  "pn_K_1": {
+   "value": 1024,
+   "display": "1,024",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.K_1.nominal"
+  },
+  "pu_K_1": {
+   "value": 1024,
+   "display": "1,024",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.K_1.movable"
+  },
+  "pn_C_1": {
+   "value": 769,
+   "display": "769",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.C_1.nominal"
+  },
+  "pu_C_1": {
+   "value": 705,
+   "display": "705",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.C_1.movable"
+  },
+  "pn_GRU_1": {
+   "value": 1099,
+   "display": "1,099",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.GRU_1.nominal"
+  },
+  "pu_GRU_1": {
+   "value": 1024,
+   "display": "1,024",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.GRU_1.movable"
+  },
+  "pn_LRU_1": {
+   "value": 1004,
+   "display": "1,004",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.LRU_1.nominal"
+  },
+  "pu_LRU_1": {
+   "value": 1004,
+   "display": "1,004",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.LRU_1.movable"
+  },
+  "pn_U1_2": {
+   "value": 768,
+   "display": "768",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.U1_2.nominal"
+  },
+  "pu_U1_2": {
+   "value": 640,
+   "display": "640",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.U1_2.movable"
+  },
+  "pn_U2_2": {
+   "value": 1536,
+   "display": "1,536",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.U2_2.nominal"
+  },
+  "pu_U2_2": {
+   "value": 1024,
+   "display": "1,024",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.U2_2.movable"
+  },
+  "pn_U4_2": {
+   "value": 4608,
+   "display": "4,608",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.U4_2.nominal"
+  },
+  "pu_U4_2": {
+   "value": 2560,
+   "display": "2,560",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.U4_2.movable"
+  },
+  "pn_U8_2": {
+   "value": 16896,
+   "display": "16,896",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.U8_2.nominal"
+  },
+  "pu_U8_2": {
+   "value": 8704,
+   "display": "8,704",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.U8_2.movable"
+  },
+  "pn_L_2": {
+   "value": 1152,
+   "display": "1,152",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.L_2.nominal"
+  },
+  "pu_L_2": {
+   "value": 1024,
+   "display": "1,024",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.L_2.movable"
+  },
+  "pn_L1_2": {
+   "value": 896,
+   "display": "896",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.L1_2.nominal"
+  },
+  "pu_L1_2": {
+   "value": 768,
+   "display": "768",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.L1_2.movable"
+  },
+  "pn_K_2": {
+   "value": 1536,
+   "display": "1,536",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.K_2.nominal"
+  },
+  "pu_K_2": {
+   "value": 1536,
+   "display": "1,536",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.K_2.movable"
+  },
+  "pn_C_2": {
+   "value": 897,
+   "display": "897",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.C_2.nominal"
+  },
+  "pu_C_2": {
+   "value": 769,
+   "display": "769",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.C_2.movable"
+  },
+  "pn_GRU_2": {
+   "value": 1144,
+   "display": "1,144",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.GRU_2.nominal"
+  },
+  "pu_GRU_2": {
+   "value": 1114,
+   "display": "1,114",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.GRU_2.movable"
+  },
+  "pn_LRU_2": {
+   "value": 1044,
+   "display": "1,044",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.LRU_2.nominal"
+  },
+  "pu_LRU_2": {
+   "value": 1044,
+   "display": "1,044",
+   "source": "runs/robustness/PARAM_AUDIT.json#counts.LRU_2.movable"
+  },
+  "pu_ratio_U2_L_1": {
+   "value": 0.8,
+   "display": "0.800",
+   "source": "pu_U2_1 / pu_L_1"
+  },
+  "pu_ratio_GRU_L_1": {
+   "value": 1.0666666666666667,
+   "display": "1.067",
+   "source": "pu_GRU_1 / pu_L_1"
+  },
+  "pu_ratio_GRU_L_2": {
+   "value": 1.087890625,
+   "display": "1.088",
+   "source": "pu_GRU_2 / pu_L_2"
+  },
+  "pu_ratio_C_L1_1": {
+   "value": 1.0014204545454546,
+   "display": "1.001",
+   "source": "pu_C_1 / pu_L1_1"
+  },
+  "pu_U2_L_pct": {
+   "value": 19.999999999999996,
+   "display": "20",
+   "source": "100 * (1 - pu_ratio_U2_L_1)"
+  },
+  "pi_C_1": {
+   "value": 508,
+   "display": "508",
+   "source": "runs/robustness/IDENT_AUDIT.json#counts.C_1.rank"
+  },
+  "pi_C_2": {
+   "value": 571,
+   "display": "571",
+   "source": "runs/robustness/IDENT_AUDIT.json#counts.C_2.rank"
+  },
+  "pi_K_1": {
+   "value": 813,
+   "display": "813",
+   "source": "runs/robustness/IDENT_AUDIT.json#counts.K_1.rank"
+  },
+  "pi_K_2": {
+   "value": 1245,
+   "display": "1,245",
+   "source": "runs/robustness/IDENT_AUDIT.json#counts.K_2.rank"
+  },
+  "pi_L1_1": {
+   "value": 569,
+   "display": "569",
+   "source": "runs/robustness/IDENT_AUDIT.json#counts.L1_1.rank"
+  },
+  "pi_L1_2": {
+   "value": 632,
+   "display": "632",
+   "source": "runs/robustness/IDENT_AUDIT.json#counts.L1_2.rank"
+  },
+  "pi_LRU_1": {
+   "value": 867,
+   "display": "867",
+   "source": "runs/robustness/IDENT_AUDIT.json#counts.LRU_1.rank"
+  },
+  "pi_LRU_2": {
+   "value": 907,
+   "display": "907",
+   "source": "runs/robustness/IDENT_AUDIT.json#counts.LRU_2.rank"
+  },
+  "pi_L_1": {
+   "value": 813,
+   "display": "813",
+   "source": "runs/robustness/IDENT_AUDIT.json#counts.L_1.rank"
+  },
+  "pi_L_2": {
+   "value": 876,
+   "display": "876",
+   "source": "runs/robustness/IDENT_AUDIT.json#counts.L_2.rank"
+  },
+  "pi_U1_1": {
+   "value": 444,
+   "display": "444",
+   "source": "runs/robustness/IDENT_AUDIT.json#counts.U1_1.rank"
+  },
+  "pi_U1_2": {
+   "value": 507,
+   "display": "507",
+   "source": "runs/robustness/IDENT_AUDIT.json#counts.U1_2.rank"
+  },
+  "pi_U2_1": {
+   "value": 633,
+   "display": "633",
+   "source": "runs/robustness/IDENT_AUDIT.json#counts.U2_1.rank"
+  },
+  "pi_U2_2": {
+   "value": 888,
+   "display": "888",
+   "source": "runs/robustness/IDENT_AUDIT.json#counts.U2_2.rank"
+  },
+  "pi_GRU_ub_1": {
+   "value": 1008,
+   "display": "1,008",
+   "source": "runs/robustness/IDENT_AUDIT.json#counts.GRU_1.movable - 16 (softmax readout shift)"
+  },
+  "pi_GRU_gap_1": {
+   "value": 1.0249713623197323,
+   "display": "1.02",
+   "source": "runs/robustness/IDENT_AUDIT.json#counts.GRU_1.gap_ratio_at_rank"
+  },
+  "pi_GRU_ub_2": {
+   "value": 1098,
+   "display": "1,098",
+   "source": "runs/robustness/IDENT_AUDIT.json#counts.GRU_2.movable - 16 (softmax readout shift)"
+  },
+  "pi_GRU_gap_2": {
+   "value": 1.007602617107972,
+   "display": "1.01",
+   "source": "runs/robustness/IDENT_AUDIT.json#counts.GRU_2.gap_ratio_at_rank"
+  },
+  "pi_ratio_U2_L_1": {
+   "value": 0.7785977859778598,
+   "display": "0.78",
+   "source": "pi_U2_1 / pi_L_1"
+  },
+  "pi_ratio_C_L1_1": {
+   "value": 0.8927943760984183,
+   "display": "0.89",
+   "source": "pi_C_1 / pi_L1_1"
+  },
+  "pi_ratio_LRU_L_1": {
+   "value": 1.066420664206642,
+   "display": "1.07",
+   "source": "pi_LRU_1 / pi_L_1"
+  },
+  "pi_ratio_U2_L_2": {
+   "value": 1.0136986301369864,
+   "display": "1.01",
+   "source": "pi_U2_2 / pi_L_2"
+  },
+  "pi_ratio_GRU_L_ub_1": {
+   "value": 1.2398523985239853,
+   "display": "1.24",
+   "source": "pi_GRU_ub_1 / pi_L_1"
+  },
+  "pi_ratio_GRU_L_ub_2": {
+   "value": 1.2534246575342465,
+   "display": "1.25",
+   "source": "pi_GRU_ub_2 / pi_L_2"
+  },
+  "hmm_nfit": {
+   "value": 5000,
+   "display": "5,000",
+   "source": "src/osw/run.py, run_e2.py, run_ethucy.py: HMM.fit(tr[0][:5000], tr[1][:5000])"
+  },
+  "e2_ntrain_A": {
+   "value": 20000,
+   "display": "20,000",
+   "source": "osw.run_e2.N_TRAIN"
+  },
+  "e2_ntrain_B": {
+   "value": 20000,
+   "display": "20,000",
+   "source": "len(osw.tasks_aiwq.split(0)[0][0])"
+  },
+  "e2_ntrain_B2": {
+   "value": 11808,
+   "display": "11,808",
+   "source": "len(osw.tasks_series.split('B2')[0][0])"
+  },
+  "e2_ntrain_B3": {
+   "value": 6159,
+   "display": "6,159",
+   "source": "len(osw.tasks_series.split('B3')[0][0])"
+  },
+  "e2_B2_hmm_frac": {
+   "value": 0.4234417344173442,
+   "display": "42%",
+   "source": "5000 / e2_ntrain_B2"
+  },
+  "e2_B3_hmm_frac": {
+   "value": 0.8118201006656924,
+   "display": "81%",
+   "source": "5000 / e2_ntrain_B3"
+  },
+  "e1_ntrain_min": {
+   "value": 7112,
+   "display": "7,112",
+   "source": "min over folds and seeds of len(osw.tasks_ethucy.loso(fold, seed)[0][0])"
+  },
+  "e1_ntrain_max": {
+   "value": 16240,
+   "display": "16,240",
+   "source": "max over folds and seeds of len(osw.tasks_ethucy.loso(fold, seed)[0][0])"
+  },
+  "h2_floor_holm": {
+   "value": 0.08333333333333333,
+   "display": "0.083",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#h2.holm_best_case_with_floor"
+  },
+  "h2_page_p": {
+   "value": 0.0155888013069957,
+   "display": "0.0156",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#h2.page_exact_p_one_sided"
+  },
+  "h2_page_holm": {
+   "value": 0.0311776026139914,
+   "display": "0.031",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#h2.page_holm"
+  },
+  "h2_rhot_p": {
+   "value": 0.034171127781010724,
+   "display": "0.034",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#h2.per_seed_rho_t_p_one_sided"
+  },
+  "h2_rhot_holm": {
+   "value": 0.06834225556202145,
+   "display": "0.068",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#h2.per_seed_rho_holm"
+  },
+  "h2_u1u2": {
+   "value": 0.008138316439797852,
+   "display": "+0.0081",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#h2.paired.U1-U2.mean"
+  },
+  "h2_u1u2_lo": {
+   "value": 0.0038389265256107176,
+   "display": "+0.0038",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#h2.paired.U1-U2.t_ci[0]"
+  },
+  "h2_u1u2_hi": {
+   "value": 0.012437706353984987,
+   "display": "+0.0124",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#h2.paired.U1-U2.t_ci[1]"
+  },
+  "h2_u1u4": {
+   "value": 0.012262590429966781,
+   "display": "+0.0123",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#h2.paired.U1-U4.mean"
+  },
+  "h2_u1u4_lo": {
+   "value": 0.006171511637910247,
+   "display": "+0.0062",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#h2.paired.U1-U4.t_ci[0]"
+  },
+  "h2_u1u4_hi": {
+   "value": 0.018353669222023316,
+   "display": "+0.0184",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#h2.paired.U1-U4.t_ci[1]"
+  },
+  "h2_u8u4": {
+   "value": 0.003983722018917753,
+   "display": "+0.0040",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#h2.paired.U8-U4.mean"
+  },
+  "h2_u8u4_lo": {
+   "value": -0.005373418596268449,
+   "display": "-0.0054",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#h2.paired.U8-U4.t_ci[0]"
+  },
+  "h2_u8u4_hi": {
+   "value": 0.013340862634103955,
+   "display": "+0.0133",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#h2.paired.U8-U4.t_ci[1]"
+  },
+  "rev_U2_peaks": {
+   "value": 43.8844,
+   "display": "43.9",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#revival.U2.mean_peaks"
+  },
+  "rev_U2_meanD": {
+   "value": 0.08702450171113014,
+   "display": "0.087",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#revival.U2.mean_D_51_200"
+  },
+  "rev_U2_index": {
+   "value": 4.3373603908777225,
+   "display": "4.34",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#revival.U2.index"
+  },
+  "rev_C_index": {
+   "value": 0.26120834440886975,
+   "display": "0.26",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#revival.C.index"
+  },
+  "rev_C_peaks": {
+   "value": 45.7192,
+   "display": "45.7",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#revival.C.mean_peaks"
+  },
+  "rev_C_meanD": {
+   "value": 0.005182747775688767,
+   "display": "0.0052",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#revival.C.mean_D_51_200"
+  },
+  "rev_rot_lo": {
+   "value": 3.7209563957459233,
+   "display": "3.7",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#revival.synthetic.constant_amplitude_period4_rotation"
+  },
+  "rev_rot_hi": {
+   "value": 4.651195494682405,
+   "display": "4.7",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#revival.synthetic.constant_amplitude_period4_rotation"
+  },
+  "rev_bump": {
+   "value": 0.04999999999999999,
+   "display": "0.05",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#revival.synthetic.one_bump_height_0.05"
+  },
+  "ck_s20": {
+   "value": 0.0001451242310713054,
+   "display": "+0.00015",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#contraction.simple-20.C-K.mean"
+  },
+  "ck_s20_lo": {
+   "value": 2.8432059560196837e-05,
+   "display": "+0.00003",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#contraction.simple-20.C-K.t_ci[0]"
+  },
+  "ck_s20_hi": {
+   "value": 0.00026181640258241397,
+   "display": "+0.00026",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#contraction.simple-20.C-K.t_ci[1]"
+  },
+  "ck_a20": {
+   "value": 0.00010816588149915587,
+   "display": "+0.00011",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#contraction.action-20.C-K.mean"
+  },
+  "ck_a20_lo": {
+   "value": 1.4372923713003294e-05,
+   "display": "+0.00001",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#contraction.action-20.C-K.t_ci[0]"
+  },
+  "ck_a20_hi": {
+   "value": 0.00020195883928530845,
+   "display": "+0.00020",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#contraction.action-20.C-K.t_ci[1]"
+  },
+  "ck_s80": {
+   "value": 0.020015720312467428,
+   "display": "+0.0200",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#contraction.simple-80.C-K.mean"
+  },
+  "ck_s80_lo": {
+   "value": 0.009509732300009255,
+   "display": "+0.0095",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#contraction.simple-80.C-K.t_ci[0]"
+  },
+  "ck_s80_hi": {
+   "value": 0.030521708324925602,
+   "display": "+0.0305",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#contraction.simple-80.C-K.t_ci[1]"
+  },
+  "c_s80_inrange": {
+   "value": 0.10476773514290605,
+   "display": "0.105",
+   "source": "runs/robustness/POST_REVIEW_CHECKS.json#contraction.simple-80_in_range_median.C"
+  },
+  "mg_s_plain": {
+   "value": 0.023873459759752986,
+   "display": "0.0239",
+   "source": "runs/robustness/ROLLOUT_DIAGNOSTICS.json#tasks.simple-20.mean.extrap_plain"
+  },
+  "mg_s_marg": {
+   "value": 0.0004175189615920269,
+   "display": "0.0004",
+   "source": "runs/robustness/ROLLOUT_DIAGNOSTICS.json#tasks.simple-20.mean.extrap_marg"
+  },
+  "mg_s_L": {
+   "value": 0.00034219394321588633,
+   "display": "0.0003",
+   "source": "runs/robustness/ROLLOUT_DIAGNOSTICS.json#tasks.simple-20.mean.extrap_L"
+  },
+  "mg_m_plain": {
+   "value": 0.020903868070925154,
+   "display": "0.0209",
+   "source": "runs/robustness/ROLLOUT_DIAGNOSTICS.json#tasks.metastable-20.mean.extrap_plain"
+  },
+  "mg_m_marg": {
+   "value": 0.0007226748618618954,
+   "display": "0.0007",
+   "source": "runs/robustness/ROLLOUT_DIAGNOSTICS.json#tasks.metastable-20.mean.extrap_marg"
+  },
+  "mg_m_L": {
+   "value": 0.0018617882455073057,
+   "display": "0.0019",
+   "source": "runs/robustness/ROLLOUT_DIAGNOSTICS.json#tasks.metastable-20.mean.extrap_L"
+  },
+  "mg_s_ir_plain": {
+   "value": 0.03283187556662705,
+   "display": "0.033",
+   "source": "runs/robustness/ROLLOUT_DIAGNOSTICS.json#tasks.simple-20.mean.in_range_plain"
+  },
+  "mg_s_ir_marg": {
+   "value": 0.04860067475132279,
+   "display": "0.049",
+   "source": "runs/robustness/ROLLOUT_DIAGNOSTICS.json#tasks.simple-20.mean.in_range_marg"
+  },
+  "mg_s_lam_lo": {
+   "value": 0.9191270892415216,
+   "display": "0.92",
+   "source": "runs/robustness/ROLLOUT_DIAGNOSTICS.json#tasks.simple-20.range.abs_lambda2_marg_channel[0]"
+  },
+  "mg_s_lam_hi": {
+   "value": 0.952758901810062,
+   "display": "0.95",
+   "source": "runs/robustness/ROLLOUT_DIAGNOSTICS.json#tasks.simple-20.range.abs_lambda2_marg_channel[1]"
+  },
+  "ret_period_lo": {
+   "value": 3.8720538720538724,
+   "display": "3.9",
+   "source": "runs/robustness/ROLLOUT_DIAGNOSTICS.json#tasks.simple-20.range.dominant_period[0]"
+  },
+  "ret_period_hi": {
+   "value": 4.107142857142857,
+   "display": "4.1",
+   "source": "runs/robustness/ROLLOUT_DIAGNOSTICS.json#tasks.simple-20.range.dominant_period[1]"
+  },
+  "ret_tv_early": {
+   "value": 0.08617552146315574,
+   "display": "0.086",
+   "source": "runs/robustness/ROLLOUT_DIAGNOSTICS.json#tasks.simple-20.mean.tv_to_own_mean_k51_200"
+  },
+  "ret_tv_late": {
+   "value": 0.0814368687570095,
+   "display": "0.081",
+   "source": "runs/robustness/ROLLOUT_DIAGNOSTICS.json#tasks.simple-20.mean.tv_to_own_mean_k1001_1200"
+  },
+  "ret_p5_med": {
+   "value": 9.0,
+   "display": "9",
+   "source": "runs/robustness/ROLLOUT_DIAGNOSTICS.json#tasks.simple-20.mean.median_return_p5_tv0.05"
+  },
+  "ret_p5_share_lo": {
+   "value": 0.91,
+   "display": "0.91",
+   "source": "runs/robustness/ROLLOUT_DIAGNOSTICS.json#tasks.simple-20.range.share_returned_by_200_p5_tv0.05[0]"
+  },
+  "ret_p51_lo": {
+   "value": 54.0,
+   "display": "54",
+   "source": "runs/robustness/ROLLOUT_DIAGNOSTICS.json#tasks.simple-20.range.median_return_p51_tv0.05[0]"
+  },
+  "ret_p51_hi": {
+   "value": 63.5,
+   "display": "64",
+   "source": "runs/robustness/ROLLOUT_DIAGNOSTICS.json#tasks.simple-20.range.median_return_p51_tv0.05[1]"
+  },
+  "ret_p51_share_lo": {
+   "value": 0.995,
+   "display": "0.99",
+   "source": "runs/robustness/ROLLOUT_DIAGNOSTICS.json#tasks.simple-20.range.share_returned_by_200_p51_tv0.05[0]"
+  },
+  "e3_design_sha": {
+   "value": "69a5ad9c",
+   "display": "69a5ad9c",
+   "source": "sha256(E3-DESIGN.zh.md)[:8]"
+  },
+  "e3_code_sha": {
+   "value": "628a28ec",
+   "display": "628a28ec",
+   "source": "runs/e3/SUMMARY.json#integrity.code_manifest_sha256[0][:8]"
+  },
+  "e3_n_jobs": {
+   "value": 310,
+   "display": "310",
+   "source": "runs/e3/SUMMARY.json#integrity.n"
+  },
+  "e3_n_failed": {
+   "value": 0,
+   "display": "0",
+   "source": "runs/e3/SUMMARY.json#integrity.n_failed"
+  },
+  "e3_pca_median": {
+   "value": 0.9933524904134371,
+   "display": "0.993",
+   "source": "runs/e3/SUMMARY.json#gates.PC-A.inputs.median"
+  },
+  "e3_pca_k": {
+   "value": 10,
+   "display": "10",
+   "source": "runs/e3/SUMMARY.json#gates.PC-A.inputs.k"
+  },
+  "e3_pcb": {
+   "value": 0.19788283966958148,
+   "display": "0.198",
+   "source": "runs/e3/SUMMARY.json#gates.PC-B.inputs.delta"
+  },
+  "e3_pcb_lo": {
+   "value": 0.1920863209325953,
+   "display": "0.192",
+   "source": "runs/e3/SUMMARY.json#gates.PC-B.inputs.ci[0]"
+  },
+  "e3_pcb_hi": {
+   "value": 0.20364683369163158,
+   "display": "0.204",
+   "source": "runs/e3/SUMMARY.json#gates.PC-B.inputs.ci[1]"
+  },
+  "e3_pck_a": {
+   "value": 0.08668157878090542,
+   "display": "+0.087",
+   "source": "runs/e3/SUMMARY.json#gates.PC-K.inputs.a_mean_diff"
+  },
+  "e3_pck_gru4": {
+   "value": 0.9838034934822377,
+   "display": "0.984",
+   "source": "runs/e3/SUMMARY.json#gates.PC-K.inputs.b_gru4"
+  },
+  "e3_pck_lru16": {
+   "value": 0.935580099397518,
+   "display": "0.936",
+   "source": "runs/e3/SUMMARY.json#gates.PC-K.inputs.b_lru16"
+  },
+  "e3_pco_median": {
+   "value": 0.9827834773584103,
+   "display": "0.983",
+   "source": "runs/e3/SUMMARY.json#gates.PC-O.inputs.median"
+  },
+  "e3_nc_max": {
+   "value": -0.9342616967805215,
+   "display": "-0.934",
+   "source": "runs/e3/SUMMARY.json#gates.NC.inputs.max_cf_shuffled"
+  },
+  "e3_cpu_floor": {
+   "value": 602.4304040000001,
+   "display": "602",
+   "source": "runs/e3/GATES-DEV.json#frozen_constants.CPU_FLOOR"
+  },
+  "e3_cov95": {
+   "value": 0.8815,
+   "display": "0.8815",
+   "source": "runs/e3/GATES-DEV.json#gates.G8.coverage"
+  },
+  "e3_cov975": {
+   "value": 0.9205,
+   "display": "0.9205",
+   "source": "runs/robustness/E3_COVERAGE.json#levels.0.975.coverage"
+  },
+  "e3_hq3m_cpu": {
+   "value": 765.327767,
+   "display": "765",
+   "source": "runs/e3/SUMMARY.json#gates.COMPUTE.inputs.hq3m_median_cpu"
+  },
+  "e3_compute_lo": {
+   "value": 0.6636579416045152,
+   "display": "0.66",
+   "source": "runs/e3/SUMMARY.json#gates.COMPUTE (min cell / HQ3-M)"
+  },
+  "e3_compute_hi": {
+   "value": 0.7936618755921868,
+   "display": "0.79",
+   "source": "runs/e3/SUMMARY.json#gates.COMPUTE (max cell / HQ3-M)"
+  },
+  "e3_pcc_mean": {
+   "value": 0.11904527596025094,
+   "display": "0.119",
+   "source": "runs/e3/SUMMARY.json#gates.PC-C.inputs.mean"
+  },
+  "e3_pcc_below": {
+   "value": 9,
+   "display": "9",
+   "source": "runs/e3/SUMMARY.json#gates.PC-C.inputs.n_below_030"
+  },
+  "e3_h1_s": {
+   "value": 10,
+   "display": "10",
+   "source": "runs/e3/SUMMARY.json#rules.H1.inputs.s"
+  },
+  "e3_h1_mean": {
+   "value": 0.9934232244271655,
+   "display": "0.993",
+   "source": "runs/e3/SUMMARY.json#rules.H1.inputs.mean"
+  },
+  "e3_h1_cp": {
+   "value": 0.7411344491069478,
+   "display": "0.74",
+   "source": "runs/e3/SUMMARY.json#rules.H1.inputs.cp_lower"
+  },
+  "e3_h2_s": {
+   "value": 0,
+   "display": "0",
+   "source": "runs/e3/SUMMARY.json#rules.H2.inputs.s"
+  },
+  "e3_h2_cp": {
+   "value": 0.2588655508930524,
+   "display": "0.26",
+   "source": "runs/e3/SUMMARY.json#rules.H2.inputs.cp_upper"
+  },
+  "e3_h3a_s": {
+   "value": 10,
+   "display": "10",
+   "source": "runs/e3/SUMMARY.json#rules.H3a.inputs.s"
+  },
+  "e3_h3b_s": {
+   "value": 0,
+   "display": "0",
+   "source": "runs/e3/SUMMARY.json#rules.H3b.inputs.s"
+  },
+  "e3_h3b_o05": {
+   "value": 0.9905081382043208,
+   "display": "0.991",
+   "source": "runs/e3/SUMMARY.json#rules.H3b.inputs.o05_median"
+  },
+  "e3_h4_share_005": {
+   "value": 1.0,
+   "display": "1.0",
+   "source": "runs/e3/SUMMARY.json#rules.H4.inputs.shares[0.05]"
+  },
+  "e3_h4_share_01": {
+   "value": 0.9,
+   "display": "0.9",
+   "source": "runs/e3/SUMMARY.json#rules.H4.inputs.shares[0.1]"
+  },
+  "e3_h4_share_03": {
+   "value": 0.0,
+   "display": "0.0",
+   "source": "runs/e3/SUMMARY.json#rules.H4.inputs.shares[0.3]"
+  },
+  "e3_h4_sigstar": {
+   "value": 0.18888888888888888,
+   "display": "0.189",
+   "source": "runs/e3/SUMMARY.json#rules.H4.inputs.sigma_star"
+  },
+  "e3_h4_sigstar_log": {
+   "value": 0.16294982222188464,
+   "display": "0.163",
+   "source": "log-sigma interpolation of rules.H4.inputs.shares at 0.5 (post hoc alternative; not in the frozen summary code)"
+  },
+  "e3_h5_delta": {
+   "value": 0.8360327133922059,
+   "display": "0.836",
+   "source": "runs/e3/SUMMARY.json#rules.H5.inputs.with_nan.delta5"
+  },
+  "e3_h5_lo": {
+   "value": 0.7865695773043909,
+   "display": "0.787",
+   "source": "runs/e3/SUMMARY.json#rules.H5.inputs.with_nan.ci[0]"
+  },
+  "e3_h5_hi": {
+   "value": 0.8819509094746767,
+   "display": "0.882",
+   "source": "runs/e3/SUMMARY.json#rules.H5.inputs.with_nan.ci[1]"
+  },
+  "e3_h5_m": {
+   "value": 0.9934232244271655,
+   "display": "0.993",
+   "source": "runs/e3/SUMMARY.json#rules.H5.inputs.with_nan.mean_m"
+  },
+  "e3_h5_c0": {
+   "value": 0.11904527596025094,
+   "display": "0.119",
+   "source": "runs/e3/SUMMARY.json#rules.H5.inputs.with_nan.mean_c0"
+  },
+  "e3_h5_c1": {
+   "value": 0.1573905110349596,
+   "display": "0.157",
+   "source": "runs/e3/SUMMARY.json#rules.H5.inputs.with_nan.mean_c1"
+  },
+  "e3_h7_delta": {
+   "value": 0.027103037266093043,
+   "display": "+0.027",
+   "source": "runs/e3/SUMMARY.json#rules.H7.inputs.delta7"
+  },
+  "e3_h7_lo": {
+   "value": 0.010617360356879104,
+   "display": "0.011",
+   "source": "runs/e3/SUMMARY.json#rules.H7.inputs.ci[0]"
+  },
+  "e3_h7_hi": {
+   "value": 0.06444423169221243,
+   "display": "0.064",
+   "source": "runs/e3/SUMMARY.json#rules.H7.inputs.ci[1]"
+  },
+  "e3_d5_cfmom": {
+   "value": 0.5789332323626999,
+   "display": "0.58",
+   "source": "runs/e3/SUMMARY.json#descriptive.D5.median_cf_mom"
+  },
+  "e3_brier": {
+   "value": 0.18139999999999995,
+   "display": "0.181",
+   "source": "runs/e3/SUMMARY.json#brier.mean"
+  },
+  "e3_brier_h7": {
+   "value": 1.6216,
+   "display": "1.62",
+   "source": "runs/e3/SUMMARY.json#brier.per_rule.H7"
+  },
+  "e3_brier_noh7": {
+   "value": 0.02137777777777778,
+   "display": "0.021",
+   "source": "runs/e3/SUMMARY.json#brier.per_rule (mean without H7)"
+  },
+  "e3_n_pred": {
+   "value": 10,
+   "display": "10",
+   "source": "runs/e3/SUMMARY.json#brier.per_rule (count)"
+  },
+  "e3_oom_ft_below": {
+   "value": 9,
+   "display": "9",
+   "source": "runs/e3/e3-U-A1-OOM3-OOM-C-s2*.json (cf_ft < cf_spec)"
+  },
+  "e3_oom_ft_gap": {
+   "value": -0.023515728961678285,
+   "display": "-0.024",
+   "source": "runs/e3/e3-U-A1-OOM3-OOM-C-s2*.json (mean cf_ft - cf_spec)"
+  },
+  "e3_oom_min": {
+   "value": 0.884722186955249,
+   "display": "0.885",
+   "source": "runs/e3 confirmatory records (A1 OOM3, min CF)"
+  },
+  "e3_oom_sel_ft": {
+   "value": 5,
+   "display": "5",
+   "source": "runs/e3/e3-U-A1-OOM3-OOM-C-s2*.json (winner != spectral)"
+  },
+  "e3_oom_spec_mean": {
+   "value": 0.9881128844291801,
+   "display": "0.988",
+   "source": "runs/e3/e3-U-A1-OOM3-OOM-C-s2*.json (mean cf_spec)"
+  },
+  "e3_h7_vs_spec": {
+   "value": 0.010010253494465614,
+   "display": "+0.010",
+   "source": "runs/e3 HQ2-M cf - OOM3 cf_spec, seed-paired mean (post hoc)"
+  },
+  "e3_a2_m_min": {
+   "value": 0.99,
+   "display": "0.990",
+   "source": "runs/e3 confirmatory records (A2 HQ3 M, min CF rounded down to 3 decimals; used as a lower bound)"
+  },
+  "e3_a2w_m_median": {
+   "value": 0.011894671994992667,
+   "display": "0.012",
+   "source": "runs/e3 confirmatory records (A2w HQ3 M, median CF)"
+  },
+  "e3_a2w_o05_min": {
+   "value": 0.30985186158869316,
+   "display": "0.310",
+   "source": "runs/e3 confirmatory records (A2w O05, min CF)"
+  },
+  "e3_s_mean": {
+   "value": 0.1920911795978923,
+   "display": "0.192",
+   "source": "runs/e3 confirmatory records (A2 S, mean CF)"
+  },
+  "e3_oom_p": {
+   "value": 17,
+   "display": "17",
+   "source": "runs/e3 confirmatory records (A1 OOM3 n_params)"
+  },
+  "e3_hq3_params": {
+   "value": 54,
+   "display": "54",
+   "source": "runs/e3 confirmatory records (A2 HQ3 n_params)"
+  },
+  "e3_cpu_confirm": {
+   "value": 24.450453922499996,
+   "display": "24.5",
+   "source": "sum job_cpu_s over runs/e3 confirmatory records"
+  },
+  "e3_r1": {
+   "value": 6,
+   "display": "6",
+   "source": "runs/e3/GATES-DEV.json#frozen_constants.R1"
+  },
+  "e3_dev_a3_m_200": {
+   "value": 0.6830335747461835,
+   "display": "0.683",
+   "source": "runs/e3/e3-DEV1-A3-HQ4-M-s200.json#cf (development, descriptive)"
+  },
+  "e3_dev_a3_m_201": {
+   "value": 0.3090501392011866,
+   "display": "0.309",
+   "source": "runs/e3/e3-DEV1-A3-HQ4-M-s201.json#cf (development, descriptive)"
+  },
+  "e3_dev_a3_m_202": {
+   "value": 0.4602445932946907,
+   "display": "0.460",
+   "source": "runs/e3/e3-DEV1-A3-HQ4-M-s202.json#cf (development, descriptive)"
+  },
+  "e3_dev_a3_o05_med": {
+   "value": 0.986527648791629,
+   "display": "0.987",
+   "source": "runs/e3/e3-DEV1-A3-HQ4-C2-sig0.0375-s20[0-2].json#cf (median; development, descriptive)"
+  },
+  "e3_dev_a2_hq4": {
+   "value": 0.9907089023274259,
+   "display": "0.991",
+   "source": "runs/e3/e3-DEV1-A2-HQ4-M-s200.json#cf (development, descriptive)"
+  },
+  "e3_dev_a3_params": {
+   "value": 128,
+   "display": "128",
+   "source": "runs/e3/e3-DEV1-A3-HQ4-M-s200.json#n_params (A3 HQ(4), real parameters)"
+  },
+  "e3_kraus_vp_max": {
+   "value": 8.395245105763394e-07,
+   "display": "8.4e-07",
+   "source": "runs/e3/FIXTURE.json#confirm.rows[process in A1/A2/A2w].kraus_vp_err (max): true-Kraus model from rho0 = I/d vs exact predictive"
+  },
+  "e3_d5_mom_ge90": {
+   "value": 1,
+   "display": "1",
+   "source": "runs/e3/e3-U-A2-HQ3-M-s2*.json (seeds with cf_mom >= 0.90; descriptive)"
+  },
+  "e3_c0_cpu_ratio": {
+   "value": 0.3234251227683472,
+   "display": "0.32",
+   "source": "runs/e3/e3-U-A2-HQ3-C0-lr*-s2*.json (median over seeds of cpu_s summed over both lrs) / runs/e3/SUMMARY.json#gates.COMPUTE.inputs.hq3m_median_cpu"
+  },
+  "e3_c1_cpu_ratio": {
+   "value": 0.9814151731933699,
+   "display": "0.98",
+   "source": "runs/e3/SUMMARY.json#descriptive.D6.A2/HQ/3/C1.median / runs/e3/SUMMARY.json#gates.COMPUTE.inputs.hq3m_median_cpu"
+  },
+  "e3_manifest_file_sha": {
+   "value": "118501c0",
+   "display": "118501c0",
+   "source": "sha256(docs/timestamps/2026-10-24-e3-design/E3-CODE-MANIFEST.json)[:8] (the time-stamped manifest file)"
+  },
+  "e3_first_start": {
+   "value": "2026-10-24T16:02:51Z",
+   "display": "2026-10-24T16:02:51Z",
+   "source": "min started_utc over runs/e3 confirmatory records"
+  },
+  "e3_den_a2": {
+   "value": 0.01810997282591092,
+   "display": "0.0181",
+   "source": "runs/e3 confirmatory REF records (A2, mean denominator_k10)"
+  },
+  "e3_den_a2w": {
+   "value": 0.003100245793043087,
+   "display": "0.0031",
+   "source": "runs/e3 confirmatory REF records (A2w, mean denominator_k10)"
+  },
+  "e3_den_a3": {
+   "value": 0.017651207702279594,
+   "display": "0.0177",
+   "source": "runs/e3 confirmatory REF records (A3, mean denominator_k10)"
+  },
+  "e3_lin_a2": {
+   "value": 0.7669517685116549,
+   "display": "0.767",
+   "source": "runs/e3 confirmatory REF records (A2, median ref.linear_soft)"
+  },
+  "e3_cpu_total": {
+   "value": 29.15770804583333,
+   "display": "29.2",
+   "source": "sum job_cpu_s over runs/e3 confirmatory records + runs/e3/GATES-DEV.json#gates.G9.steps[0].dev_h"
+  },
+  "e3_cp_pca": {
+   "value": 0.7411344491069477,
+   "display": "0.74",
+   "source": "one-sided 95% Clopper-Pearson lower bound for 10/10 (runs/e3/SUMMARY.json counts)"
+  },
+  "e3_cp_pcc": {
+   "value": 0.6058366975634952,
+   "display": "0.61",
+   "source": "one-sided 95% Clopper-Pearson lower bound for 9/10 (runs/e3/SUMMARY.json counts)"
+  },
+  "e3_cp_h1": {
+   "value": 0.7411344491069477,
+   "display": "0.74",
+   "source": "one-sided 95% Clopper-Pearson lower bound for 10/10 (runs/e3/SUMMARY.json counts)"
+  },
+  "e3_cp_h2": {
+   "value": 0.2588655508930522,
+   "display": "0.26",
+   "source": "one-sided 95% Clopper-Pearson upper bound for 0/10 (runs/e3/SUMMARY.json counts)"
+  },
+  "e3_cp_h3a": {
+   "value": 0.7411344491069477,
+   "display": "0.74",
+   "source": "one-sided 95% Clopper-Pearson lower bound for 10/10 (runs/e3/SUMMARY.json counts)"
+  },
+  "e3_cp_h3b": {
+   "value": 0.2588655508930522,
+   "display": "0.26",
+   "source": "one-sided 95% Clopper-Pearson upper bound for 0/10 (runs/e3/SUMMARY.json counts)"
+  },
+  "e3_cp_h4": {
+   "value": 0.2588655508930522,
+   "display": "0.26",
+   "source": "one-sided 95% Clopper-Pearson upper bound for 0/10 (runs/e3/SUMMARY.json counts)"
+  }
+ }
+}
